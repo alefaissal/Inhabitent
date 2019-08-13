@@ -58,6 +58,12 @@ function inhabitent_cpt_product()
         'publicly_queryable' => true,
         'capability_type' => 'page',
         'show_in_rest' => true,
+        'template_lock' => 'all', //to lock all gutenberg from show in product page
+        'template' => array(
+            array('core/paragraph', array(
+                'placeholder' => 'Add the product description here.',
+            )),
+        ),
     );
     register_post_type('product', $args);
 
