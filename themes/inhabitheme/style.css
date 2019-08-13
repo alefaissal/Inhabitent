@@ -572,6 +572,42 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.article-journal {
+  margin: 0 auto;
+  max-width: 740px; }
+
+body article header.journal-header {
+  position: relative;
+  max-width: 640px; }
+  body article header.journal-header img {
+    -o-object-fit: fill;
+       object-fit: fill; }
+
+.journal-title a {
+  background: #248A83;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 34px;
+  width: 450px;
+  padding: 5px 20px; }
+
+.journal-meta {
+  position: absolute;
+  background: #248A83;
+  bottom: 7px;
+  right: 0;
+  color: white;
+  padding: 2px 30px;
+  margin: 0; }
+
+.journal-content {
+  max-width: 640px;
+  text-align: justify; }
+
 .sticky {
   display: block; }
 
