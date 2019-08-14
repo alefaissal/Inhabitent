@@ -572,6 +572,27 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.hero-image-header {
+  height: 100vh;
+  width: 100%;
+  color: white;
+  font-size: 1.2em;
+  text-transform: uppercase; }
+
+.about-content h3 {
+  text-align: center;
+  max-width: 740px;
+  margin: 20px auto;
+  font-size: 2em; }
+
+.about-content p {
+  text-align: justify;
+  max-width: 740px;
+  margin: 20px auto; }
+
+.about-title {
+  display: none; }
+
 .article-journal {
   margin: 0 auto;
   max-width: 740px; }
@@ -607,6 +628,37 @@ body article header.journal-header {
 .journal-content {
   max-width: 640px;
   text-align: justify; }
+
+.site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+
+.content-area {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.find-us-main {
+  text-transform: uppercase;
+  max-width: 740px;
+  margin: 0 auto; }
+  .find-us-main h4 {
+    font-size: 2em; }
+  .find-us-main p {
+    text-align: justify; }
+    .find-us-main p input {
+      text-transform: uppercase;
+      background: #248A83;
+      color: white; }
+  .find-us-main p label input {
+    background: #a1a1a1; }
+  .find-us-main textarea {
+    background: #a1a1a1; }
+
+.find-us-header {
+  font-size: 1.2em; }
 
 .sticky {
   display: block; }
@@ -706,3 +758,58 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.footer-box {
+  background: url(http://localhost:8888/wordpress_projects/inhabitent//wp-content/themes/inhabitheme/images/dark-wood.png) repeat;
+  background-size: cover;
+  color: white; }
+
+.footer-container {
+  padding: 0 20px 40px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.contact-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 20%;
+  padding-top: 50px; }
+  .contact-box p {
+    margin: 10px 0; }
+
+.hours-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 20%;
+  padding-top: 50px; }
+  .hours-box p {
+    margin: 10px 0; }
+
+.logo-box {
+  width: 40%;
+  padding: 50px; }
+
+.footer-title {
+  text-transform: uppercase;
+  color: #d99054; }
+
+.copyright-box {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0; }
+  .copyright-box p {
+    margin: 0; }

@@ -4,6 +4,38 @@
 
 /* Posts and pages */
 
+// About page
+.hero-image-header {
+	height: 100vh;
+	width: 100%;
+	color: white;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+.about-content {
+
+	h3 {
+		text-align: center;
+		max-width: 740px;
+		margin: 20px auto;
+		font-size: 2em;
+	}
+
+	p {
+		text-align: justify;
+		max-width: 740px;
+		margin: 20px auto;
+	}
+}
+
+.about-title {
+	display: none;
+}
+
+
+// Post page
+
 .article-journal {
 	margin: 0 auto;
 	max-width: 740px;
@@ -45,6 +77,54 @@ body article header.journal-header {
 .journal-content {
 	max-width: 640px;
 	text-align: justify;
+}
+
+
+
+//Find us page
+
+.site-content {
+	display: flex;
+	width: 100%;
+}
+
+.content-area {
+	flex-grow: 1;
+}
+
+.find-us-main {
+	text-transform: uppercase;
+	max-width: 740px;
+	margin: 0 auto;
+
+
+
+
+	h4 {
+		font-size: 2em;
+	}
+
+	p {
+		text-align: justify;
+
+		input {
+			text-transform: uppercase;
+			background: #248A83;
+			color: white;
+		}
+	}
+
+	p label input {
+		background: #a1a1a1;
+	}
+
+	textarea {
+		background: #a1a1a1;
+	}
+}
+
+.find-us-header {
+	font-size: 1.2em;
 }
 
 .sticky {
