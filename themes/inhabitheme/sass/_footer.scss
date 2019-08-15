@@ -1,7 +1,7 @@
 .footer-box {
     background:
-        // linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
-        url(http://localhost:8888/wordpress_projects/inhabitent//wp-content/themes/inhabitheme/images/dark-wood.png) repeat;
+        //linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+        url(../../images/dark-wood.png) repeat;
 
     background-size: cover;
     color: white;
@@ -55,4 +55,7 @@
     p {
         margin: 0;
     }
+}
+.days-week{
+    font-weight: bold;
 }

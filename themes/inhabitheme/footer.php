@@ -13,18 +13,19 @@
 				<div class="site-info footer-box">
 					<div class="footer-container">
 						<div class="contact-box">
-							<p><span class="footer-title">Contact Info<span></p>
-							<p>info@inhabitent.com</p>
-							<p>778-456-7891</p>
+							<p><span class="footer-title">Contact Info</span></p>
+							<p><i class="far fa-envelope"></i> info@inhabitent.com</p>
+							<p><i class="fas fa-phone-square"></i> 778-456-7891</p>
+							<p><i class="fab fa-facebook-square"></i>  <i class="fab fa-instagram"></i>         <i class="fab fa-twitter-square"></i></p>
 						</div>
 						<div class="hours-box">
-							<p><span class="footer-title">Business Hours<span></p>
-							<p>Monday-Friday: 9am to 5pm</p>
-							<p>Saturday: 10am to 2pm</p>
-							<p>Sunday: Closed</p>
+							<p><span class="footer-title">Business Hours</span></p>
+							<p><span class="days-week">Monday-Friday:</span> 9am to 5pm</p>
+							<p><span class="days-week">Saturday:</span> 10am to 2pm</p>
+							<p><span class="days-week">Sunday:</span> Closed</p>
 						</div>
 						<div class="logo-box">
-							<img src="http://localhost:8888/wordpress_projects/inhabitent//wp-content/themes/inhabitheme/images/logos/inhabitent-logo-text.svg" alt="inhabitent logo text">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg" alt="inhabitent logo text">
 						</div>
 				</div>
 						<div class="copyright-box">
