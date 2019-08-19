@@ -66,3 +66,15 @@ function my_custom_login_url($url)
     return get_bloginfo('url');
 }
 add_filter('login_headerurl', 'my_custom_login_url');
+
+add_filter( 'body_class', 'addBodyClass' );
+
+function addBodyClass( $classes ) {
+  if( is_front_page() || strpos( get_page_template_slug( get_the_ID() ), 'page-about' ) > 0 || is_singular( 'adventure_type' ) ) {
+    // $classes[] = 'large-image';
+  }else{
+    $classes[] = 'no-large-image'; 
+  }
+
+  return $classes;
+}

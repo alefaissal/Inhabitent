@@ -11,12 +11,12 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
    <main id="main" class="site-main" role="main">
-<div class="main-img-logo">
-   <img src='<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg' alt='inhabitent logo'/>
-</div>
+      <div class="main-img-logo">
+         <img src='<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg' alt='inhabitent logo' />
+      </div>
       <section class="product-info container">
          <h2>Shop Stuff</h2>
-         <?php 
+         <?php
 
          $termArgs = [
             'taxonomy' => 'product-type',
@@ -43,8 +43,8 @@ get_header(); ?>
          ?>
       </section>
 
-      <section class="journal-info container">
-         <h2>Inhabitente Journal</h2>
+      <section class="journal-info-container">
+         <h2>Inhabitent Journal</h2>
 
          <?php
          $args = array(
@@ -56,30 +56,35 @@ get_header(); ?>
 
          $journals = get_posts($args); ?>
 
-         <div class='front-page-journal'>
+         <div class='front-page-journal-container'>
             <?php foreach ($journals as $post) : ?>
             <!-- var_dump($post); -->
             <?php setup_postdata($post); ?>
 
-
-            <div class='front-page-journal-thumbnail'>
-               <?php the_post_thumbnail(); ?>
-            </div>
-            <div class='front-page-journal-meta'>
-               <div class='front-page-journal-date'>
-                  <?php the_date(); ?>
+            <div class='front-page-post-container'>
+               <div class='front-page-journal-thumbnail'>
+                  <?php the_post_thumbnail(); ?>
                </div>
-               <div class='front-page-journal-comment'>
-                 <?php red_starter_comment_count(); ?>
+               <div class='front-page-post-meta-container'>
+                  <div class='front-page-post-date'>
+                     <?php the_date(); ?>
+                  </div>
+                  <div class='front-page-post-comment'>
+                  </div>
+                  / <?php comments_number('0 Comments', '1 Comment', '% Comments'); ?>
                </div>
-            </div>
-            <div class='front-page-journal-title'>
-               <?php the_title(); ?>
-            </div>
-         
-         <?php endforeach; ?>
-</div>
+               <div class='front-page-post-title'>
+                  <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
 
+               </div>
+               <div class='front-page-post-permalink'>
+                  <a href="<?php the_permalink() ?>" rel="bookmark">Read Entry</a>
+               </div>
+
+            </div>
+            <?php endforeach; ?>
+         </div>
+         <?php //wp_reset_postdata(); ?>
 
 
       </section>

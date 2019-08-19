@@ -622,17 +622,98 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.nav-header-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1200px;
+  z-index: 200;
+  margin: 0 auto; }
+  .nav-header-flexbox img {
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+    background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
+    background-size: contain;
+    margin-top: 10px;
+    border: none; }
+  .nav-header-flexbox nav {
+    width: 50%; }
+  .nav-header-flexbox ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: bold; }
+    .nav-header-flexbox ul li a {
+      color: white;
+      text-decoration: none; }
+      .nav-header-flexbox ul li a:hover {
+        color: #d99054; }
+
+.no-large-image .nav-back-color {
+  border-bottom: solid 1px black;
+  margin-bottom: 10px;
+  width: 100%;
+  background: #e6e3e3; }
+
+.no-large-image .nav-header-flexbox img {
+  background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+  background-size: contain;
+  margin-top: 10px;
+  border: none; }
+
+.no-large-image .nav-header-flexbox ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  text-transform: uppercase;
+  width: 100%;
+  font-weight: bold; }
+  .no-large-image .nav-header-flexbox ul li a {
+    color: #248A83;
+    text-decoration: none; }
+    .no-large-image .nav-header-flexbox ul li a:hover {
+      color: black; }
+
 .main-img-logo {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(http://localhost:8888/wordpress_projects/inhabitent//wp-content/themes/inhabitheme/images/home-hero.jpg);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(http://localhost:8888/wordpress_projects/inhabitent//wp-content/themes/inhabitheme/images/home-hero.jpg);
+  position: relative;
+  margin: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/home-hero.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../../images/home-hero.jpg);
   background-size: cover, cover;
   height: 100vh;
-  width: 100vw; }
+  width: 100%;
+  top: -65px;
+  z-index: -100; }
+  .main-img-logo img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
 
 .product-info {
-  max-width: 85%;
-  margin: 0 auto;
-  padding: 30px; }
+  max-width: 1200px;
+  margin: 0 auto; }
   .product-info h2 {
     font-family: 'Novecento Sans Web';
     text-align: center;
@@ -681,6 +762,87 @@ a {
     background: #248A83;
     color: white; }
 
+.journal-info-container {
+  max-width: 1200px;
+  margin: 0 auto; }
+  .journal-info-container h2 {
+    font-family: Novecento Sans Web;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: normal; }
+
+.front-page-journal-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.front-page-post-container {
+  width: 30%;
+  margin: 15px; }
+
+.front-page-post-meta-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.8em;
+  margin-top: 10px; }
+
+.front-page-journal-thumbnail {
+  height: 245px;
+  width: 370px; }
+  .front-page-journal-thumbnail img {
+    width: 100%;
+    height: 100%; }
+
+.front-page-post-title a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #248A83;
+  font-size: 1.4em;
+  font-weight: bold; }
+  .front-page-post-title a:hover {
+    color: black; }
+
+.front-page-post-permalink {
+  padding: 20px;
+  position: relative;
+  margin: 10px; }
+  .front-page-post-permalink a {
+    position: absolute;
+    -webkit-transform: translate(-25px, -20px);
+            transform: translate(-25px, -20px);
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid #000;
+    color: #000; }
+    .front-page-post-permalink a:hover {
+      background: #248A83;
+      color: white; }
+
+.adventure-page-header {
+  display: none; }
+  .adventure-page-header h1 {
+    display: none; }
+
+.single-adventure-page img {
+  width: 100%;
+  height: 100vh; }
+
+.single-adventure-page h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em; }
+
+.single-adventure-page p {
+  width: 740px;
+  margin: 0 auto;
+  line-height: 30px;
+  text-align: justify;
+  padding: 20px; }
+
 .hero-image-header {
   height: 100vh;
   width: 100%;
@@ -703,7 +865,7 @@ a {
   display: none; }
 
 .article-journal {
-  margin: 0 auto;
+  margin: 30px auto;
   max-width: 740px; }
 
 body article header.journal-header {
@@ -738,6 +900,16 @@ body article header.journal-header {
   max-width: 640px;
   text-align: justify; }
 
+.journal-page-read-more a {
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #000;
+  color: #000; }
+  .journal-page-read-more a:hover {
+    background: #248A83;
+    color: white; }
+
 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -768,6 +940,30 @@ body article header.journal-header {
 
 .find-us-header {
   font-size: 1.2em; }
+
+span.day-of-week {
+  font-weight: bold; }
+
+aside ul {
+  margin: 0;
+  padding: 0; }
+
+aside li {
+  display: block;
+  list-style-type: none;
+  text-align: left; }
+
+aside a {
+  text-decoration: none;
+  color: #248A83; }
+
+.contact-box-sidebar a {
+  color: black; }
+  .contact-box-sidebar a:hover {
+    color: #d99054; }
+
+.widget-area {
+  margin: 0 50px; }
 
 .sticky {
   display: block; }
@@ -881,6 +1077,11 @@ object {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
+  .footer-container a {
+    color: white;
+    text-decoration: none; }
+    .footer-container a:hover {
+      color: #d99054; }
 
 .contact-box {
   display: -webkit-box;

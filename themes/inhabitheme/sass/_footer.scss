@@ -12,6 +12,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    a{
+        color: white;
+        text-decoration: none;
+        &:hover{
+            color: #d99054;
+        }
+    }
+
 }
 
 .contact-box {
