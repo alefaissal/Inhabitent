@@ -16,7 +16,7 @@ get_header(); ?>
 		<div class='archive-page-nav'>
 			<ul>
 				<?php
-				$category_id = get_cat_ID('Wear');
+				$category_id = get_cat_ID('Wear'); 
 				// echo $category_id;
 				get_category_link('Do');
 				?>

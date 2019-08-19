@@ -268,6 +268,16 @@
 	}
 }
 
+//archive single category
+
+div.archive-page-title {
+	div.archive-single-category-description {
+		font-weight: 100;
+	}
+}
+
+
+
 //archive product page
 
 .archive-page-main {
@@ -277,6 +287,9 @@
 
 .archive-page-title {
 	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.2em;
 
 }
 
@@ -287,9 +300,17 @@
 		justify-content: space-around;
 		list-style-type: none;
 		margin: 30px auto;
-		text-transform: uppercase;
-		color: #248A83;
-		font-family: Merriweather Web;
+
+		li {
+			a {
+				font-size: 1.2em;
+				text-transform: uppercase;
+				color: #248A83;
+				font-family: Merriweather Web;
+				text-decoration: none;
+			}
+
+		}
 	}
 }
 
@@ -299,15 +320,16 @@
 	grid-auto-rows: 1fr;
 	grid-gap: 1rem;
 	padding: 30px;
-	
+
 }
 
+
 .archive-product-grid-item {
-	
-	img{
+
+	img {
 		widows: 100%;
 		max-height: 180px;
-		
+
 	}
 }
 
@@ -320,18 +342,68 @@
 	border-top-width: 5px;
 	padding: 0 10px;
 
-	p{
+	p {
 		white-space: nowrap;
 		margin: 0;
 	}
-	.dots{
+
+	.dots {
 		flex-grow: 1;
 		overflow: hidden;
-		&::after{
+
+		&::after {
 			content: '.............................................';
 		}
 	}
 }
+
+// Single product page
+
+
+.single-product-container {
+	max-width: 60%;
+	margin: 0 auto;
+
+	article {
+		width: 100%;
+	}
+}
+
+.single-product-flexbox {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.single-product-thumbnail {
+		width: 50%;
+		padding: 10px;
+	}
+
+	.single-product-text {
+		width: 50%;
+		padding: 10px;
+
+		.entry-title {
+			color: #d99054;
+			text-transform: uppercase;
+		}
+
+		.single-product-price {
+			font-size: 1.8em;
+			font-family: Novecento Sans Web;
+		}
+		.entry-content{
+			text-align: justify;
+		}
+	}
+
+}
+
+
+
+
+
 
 //Adventure Page
 .adventure-page-header {
@@ -396,7 +468,7 @@
 }
 
 
-// Post page and single page Journal
+// Post page 
 
 .article-journal {
 	margin: 30px auto;
@@ -456,6 +528,129 @@ body article header.journal-header {
 	}
 }
 
+//Single page Journal
+
+body article header.single-journal-header {
+	position: relative;
+	max-width: 740px;
+
+
+	img {
+		object-fit: fill;
+		width: 100%;
+	}
+}
+
+.single-journal-title {
+	background: #248A83;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1em;
+	width: 450px;
+	padding: 5px 20px;
+}
+
+.single-journal-meta {
+	position: absolute;
+	background: #248A83;
+	bottom: 7px;
+	right: 0;
+	color: white;
+	padding: 2px 30px;
+	margin: 0;
+
+	a {
+		color: white;
+		text-decoration: none;
+
+		&:hover {
+			color: black;
+		}
+	}
+}
+
+.single-journal-para {
+	max-width: 740px;
+
+	p {
+		text-align: justify;
+	}
+}
+
+.single-journal-container {
+	max-width: 80%;
+	margin: 0 auto;
+
+	article {
+		max-width: 740px;
+		margin: 0 auto;
+	}
+}
+
+.entry-footer {
+	display: flex;
+	justify-content: space-around;
+	text-transform: uppercase;
+
+	a {
+		text-decoration: none;
+		color: #248A83;
+
+		&:hover {
+			color: black;
+		}
+	}
+
+}
+
+.single-journal-comments-container {
+	max-width: 740px;
+	margin: 0 auto;
+}
+
+.comment-respond {
+	h3 {
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		font-size: 1.7em;
+	}
+}
+
+form {
+	font-family: Novecento Sans Web;
+	text-transform: uppercase;
+
+	.logged-in-as {
+		display: none;
+	}
+
+	.form-submit input {
+		text-transform: uppercase;
+		background: #248A83;
+		color: white;
+		font-family: Novecento Sans Web;
+	}
+
+	p label {}
+
+	textarea {
+		background: #cecbcb;
+	}
+}
+
+.entry-footer {
+	max-width: 740px;
+	margin: 0 auto;
+}
+
+.single-journal-comments-container {
+	max-width: 740px;
+	margin: 0 auto;
+}
 
 //Find us page
 

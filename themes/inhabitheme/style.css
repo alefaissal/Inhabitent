@@ -822,12 +822,18 @@ a {
       background: #248A83;
       color: white; }
 
+div.archive-page-title div.archive-single-category-description {
+  font-weight: 100; }
+
 .archive-page-main {
   max-width: 1200px;
   margin: 0 auto; }
 
 .archive-page-title {
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2em; }
 
 .archive-page-nav ul {
   max-width: 50%;
@@ -837,10 +843,13 @@ a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style-type: none;
-  margin: 30px auto;
-  text-transform: uppercase;
-  color: #248A83;
-  font-family: Merriweather Web; }
+  margin: 30px auto; }
+  .archive-page-nav ul li a {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #248A83;
+    font-family: Merriweather Web;
+    text-decoration: none; }
 
 .archive-product-grid {
   display: grid;
@@ -877,6 +886,38 @@ a {
     overflow: hidden; }
     .grid-item-text .dots::after {
       content: '.............................................'; }
+
+.single-product-container {
+  max-width: 60%;
+  margin: 0 auto; }
+  .single-product-container article {
+    width: 100%; }
+
+.single-product-flexbox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .single-product-flexbox .single-product-thumbnail {
+    width: 50%;
+    padding: 10px; }
+  .single-product-flexbox .single-product-text {
+    width: 50%;
+    padding: 10px; }
+    .single-product-flexbox .single-product-text .entry-title {
+      color: #d99054;
+      text-transform: uppercase; }
+    .single-product-flexbox .single-product-text .single-product-price {
+      font-size: 1.8em;
+      font-family: Novecento Sans Web; }
+    .single-product-flexbox .single-product-text .entry-content {
+      text-align: justify; }
 
 .adventure-page-header {
   display: none; }
@@ -965,6 +1006,95 @@ body article header.journal-header {
   .journal-page-read-more a:hover {
     background: #248A83;
     color: white; }
+
+body article header.single-journal-header {
+  position: relative;
+  max-width: 740px; }
+  body article header.single-journal-header img {
+    -o-object-fit: fill;
+       object-fit: fill;
+    width: 100%; }
+
+.single-journal-title {
+  background: #248A83;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  width: 450px;
+  padding: 5px 20px; }
+
+.single-journal-meta {
+  position: absolute;
+  background: #248A83;
+  bottom: 7px;
+  right: 0;
+  color: white;
+  padding: 2px 30px;
+  margin: 0; }
+  .single-journal-meta a {
+    color: white;
+    text-decoration: none; }
+    .single-journal-meta a:hover {
+      color: black; }
+
+.single-journal-para {
+  max-width: 740px; }
+  .single-journal-para p {
+    text-align: justify; }
+
+.single-journal-container {
+  max-width: 80%;
+  margin: 0 auto; }
+  .single-journal-container article {
+    max-width: 740px;
+    margin: 0 auto; }
+
+.entry-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-transform: uppercase; }
+  .entry-footer a {
+    text-decoration: none;
+    color: #248A83; }
+    .entry-footer a:hover {
+      color: black; }
+
+.single-journal-comments-container {
+  max-width: 740px;
+  margin: 0 auto; }
+
+.comment-respond h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 1.7em; }
+
+form {
+  font-family: Novecento Sans Web;
+  text-transform: uppercase; }
+  form .logged-in-as {
+    display: none; }
+  form .form-submit input {
+    text-transform: uppercase;
+    background: #248A83;
+    color: white;
+    font-family: Novecento Sans Web; }
+  form textarea {
+    background: #cecbcb; }
+
+.entry-footer {
+  max-width: 740px;
+  margin: 0 auto; }
+
+.single-journal-comments-container {
+  max-width: 740px;
+  margin: 0 auto; }
 
 .site-content {
   display: -webkit-box;
@@ -1129,6 +1259,8 @@ object {
   color: white; }
 
 .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0 20px 40px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
