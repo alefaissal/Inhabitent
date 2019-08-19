@@ -822,6 +822,62 @@ a {
       background: #248A83;
       color: white; }
 
+.archive-page-main {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.archive-page-title {
+  text-align: center; }
+
+.archive-page-nav ul {
+  max-width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  margin: 30px auto;
+  text-transform: uppercase;
+  color: #248A83;
+  font-family: Merriweather Web; }
+
+.archive-product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-auto-rows: 1fr;
+  grid-gap: 1rem;
+  padding: 30px; }
+
+.archive-product-grid-item img {
+  widows: 100%;
+  max-height: 180px; }
+
+.grid-item-text {
+  height: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px;
+  padding: 0 10px; }
+  .grid-item-text p {
+    white-space: nowrap;
+    margin: 0; }
+  .grid-item-text .dots {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    overflow: hidden; }
+    .grid-item-text .dots::after {
+      content: '.............................................'; }
+
 .adventure-page-header {
   display: none; }
   .adventure-page-header h1 {
@@ -1058,6 +1114,10 @@ object {
 
 .gallery-caption {
   display: block; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 /*--------------------------------------------------------------
 # Page Templates

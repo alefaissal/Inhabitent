@@ -7,26 +7,29 @@
 //Header for all pages
 
 
-.nav-header-flexbox{
+.nav-header-flexbox {
 	display: flex;
 	justify-content: space-between;
 	max-width: 1200px;
 	z-index: 200;
 	margin: 0 auto;
-	img{
-		height:50px;
+
+	img {
+		height: 50px;
 		width: 50px;
 		margin-left: 20px;
 		background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
-			background-size: contain; 
-			margin-top: 10px;
-			border: none;
+		background-size: contain;
+		margin-top: 10px;
+		border: none;
 	}
-	nav{
+
+	nav {
 		width: 50%;
-	
+
 	}
-	ul{
+
+	ul {
 		display: flex;
 		justify-content: space-evenly;
 		align-items: center;
@@ -34,40 +37,44 @@
 		text-transform: uppercase;
 		width: 100%;
 		font-weight: bold;
-		
-		li{
-		
-		a{
-			color: white;
-			text-decoration: none;
-			&:hover{
-				color:#d99054;
+
+		li {
+
+			a {
+				color: white;
+				text-decoration: none;
+
+				&:hover {
+					color: #d99054;
+				}
 			}
-		}
 		}
 	}
 
 }
 
-.no-large-image{
-	.nav-back-color{
+.no-large-image {
+	.nav-back-color {
 		border-bottom: solid 1px black;
 		margin-bottom: 10px;
-		width:100%;
-		background: #e6e3e3;;
+		width: 100%;
+		background: #e6e3e3;
+		;
 	}
-	.nav-header-flexbox{
 
-		img{
+	.nav-header-flexbox {
+
+		img {
 			// display:none;
 			background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
-			background-size: contain; 
+			background-size: contain;
 			margin-top: 10px;
 			border: none;
 		}
-		nav{
-		}
-		ul{
+
+		nav {}
+
+		ul {
 			display: flex;
 			justify-content: space-evenly;
 			align-items: center;
@@ -75,19 +82,20 @@
 			text-transform: uppercase;
 			width: 100%;
 			font-weight: bold;
-			
-			li{
-			
-			a{
-				color: #248A83;
-				text-decoration: none;
-				&:hover{
-					color:black;
+
+			li {
+
+				a {
+					color: #248A83;
+					text-decoration: none;
+
+					&:hover {
+						color: black;
+					}
 				}
 			}
-			}
 		}
-	
+
 	}
 
 }
@@ -117,7 +125,7 @@
 	}
 }
 
-//products 
+//front page products 
 
 .product-info {
 	max-width: 1200px;
@@ -210,12 +218,13 @@
 
 .front-page-post-date {}
 
-.front-page-journal-thumbnail{
+.front-page-journal-thumbnail {
 	height: 245px;
 	width: 370px;
-	img{
+
+	img {
 		width: 100%;
-		height:100%;
+		height: 100%;
 	}
 }
 
@@ -223,14 +232,15 @@
 
 .front-page-post-title {
 
-	a{
+	a {
 		text-transform: uppercase;
 		text-decoration: none;
 		color: #248A83;
 		font-size: 1.4em;
 		font-weight: bold;
-		&:hover{
-			color:black;
+
+		&:hover {
+			color: black;
 		}
 	}
 
@@ -238,9 +248,9 @@
 
 .front-page-post-permalink {
 	padding: 20px;
-    position: relative;
-    margin: 10px;
-	
+	position: relative;
+	margin: 10px;
+
 
 	a {
 		position: absolute;
@@ -250,36 +260,102 @@
 		text-decoration: none;
 		border: 1px solid #000;
 		color: #000;
-		&:hover{
+
+		&:hover {
 			background: #248A83;
-			color:white;
+			color: white;
 		}
 	}
 }
 
+//archive product page
 
+.archive-page-main {
+	max-width: 1200px;
+	margin: 0 auto;
+}
 
+.archive-page-title {
+	text-align: center;
+
+}
+
+.archive-page-nav {
+	ul {
+		max-width: 50%;
+		display: flex;
+		justify-content: space-around;
+		list-style-type: none;
+		margin: 30px auto;
+		text-transform: uppercase;
+		color: #248A83;
+		font-family: Merriweather Web;
+	}
+}
+
+.archive-product-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+	grid-auto-rows: 1fr;
+	grid-gap: 1rem;
+	padding: 30px;
+	
+}
+
+.archive-product-grid-item {
+	
+	img{
+		widows: 100%;
+		max-height: 180px;
+		
+	}
+}
+
+.grid-item-text {
+	height: 4em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid #e1e1e1;
+	border-top-width: 5px;
+	padding: 0 10px;
+
+	p{
+		white-space: nowrap;
+		margin: 0;
+	}
+	.dots{
+		flex-grow: 1;
+		overflow: hidden;
+		&::after{
+			content: '.............................................';
+		}
+	}
+}
 
 //Adventure Page
-.adventure-page-header{
+.adventure-page-header {
 	display: none;
-	h1{
+
+	h1 {
 		display: none;
 	}
 }
 
 
-.single-adventure-page{
-	img{
+.single-adventure-page {
+	img {
 		width: 100%;
 		height: 100vh;
 	}
-	h2{
+
+	h2 {
 		text-transform: uppercase;
 		text-align: center;
 		font-size: 2em;
 	}
-	p{
+
+	p {
 		width: 740px;
 		margin: 0 auto;
 		line-height: 30px;
@@ -365,16 +441,17 @@ body article header.journal-header {
 	text-align: justify;
 }
 
-.journal-page-read-more{
+.journal-page-read-more {
 	a {
 		padding: 10px;
 		text-transform: uppercase;
 		text-decoration: none;
 		border: 1px solid #000;
 		color: #000;
-		&:hover{
+
+		&:hover {
 			background: #248A83;
-			color:white;
+			color: white;
 		}
 	}
 }
@@ -450,15 +527,17 @@ aside {
 	}
 }
 
-.contact-box-sidebar{
-	a{
+.contact-box-sidebar {
+	a {
 		color: black;
-		&:hover{
+
+		&:hover {
 			color: #d99054;
 		}
 	}
 }
-.widget-area{
+
+.widget-area {
 	margin: 0 50px;
 }
 
