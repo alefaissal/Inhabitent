@@ -44,6 +44,7 @@ function inhabitente_debug($var)
     echo '</pre>';
 }
 
+
 // custom login for theme
 function custom_login()
 {
@@ -78,3 +79,30 @@ function addBodyClass( $classes ) {
 
   return $classes;
 }
+
+add_filter( 'get_the_archive_title', function ( $title ) {
+
+    if( is_tax('product-type') ) {
+
+        $title = single_term_title( '', false );
+
+    }
+    elseif( is_post_type_archive('product') ) {
+
+        $title = 'Shop Stuff';
+    }
+    return $title;
+
+});
+
+add_filter( 'the_archive_title', function ( $title ) {
+
+    if( is_tag() ) {
+
+        $title = single_tag_title( '', false );
+
+    }
+
+    return $title;
+
+});

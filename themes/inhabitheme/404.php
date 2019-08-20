@@ -9,16 +9,18 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area four-content-area">
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
+					<div class="page-img-four-tent">
+					<h1 class="page-title-four-tent"><?php echo esc_html( "Oops! Look's like your tent is down..." ); ?></h1>
+					</div>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?' ); ?></p>
+					<p class='nothing-found-four'><?php echo esc_html( 'Maybe try one of the links below or a search?' ); ?></p>
 
 					<?php get_search_form(); ?>
 
@@ -40,12 +42,12 @@ get_header(); ?>
 						</ul>
 					</div><!-- .widget -->
 					<?php endif; ?>
-
+				<div class='search-text-four'>
 					<?php
 						$archive_content = '<p>' . sprintf( esc_html( 'Try looking in the monthly archives. %1$s' ), convert_smilies( ':)' ) ) . '</p>';
 						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 					?>
-
+</div>
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 

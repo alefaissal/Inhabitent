@@ -83,11 +83,47 @@ get_header(); ?>
 
             </div>
             <?php endforeach; ?>
+
+
+
+
+
          </div>
-         <?php //wp_reset_postdata(); ?>
+         <?php //wp_reset_postdata(); 
+         ?>
 
 
       </section>
+
+      <section class="more-adventures">
+         <h1> Latest Adventures</h1>
+         <div class='grid-container-front-page'>
+
+            <div class='grid-item-canoe'>
+               <h2>Getting Back to <br>The Nature in a Canoe</h2>
+               <a href="#">Ready More</a>
+            </div>
+            <div class='grid-item-night'>
+               <h2>A Night with Friends at <br>the Beach</h2>
+               <a href="#">Ready More</a>
+            </div>
+            <div class='grid-item-mountain'>
+               <h2>Taking in the <br>View at Big<br> Mountai</h2>
+               <a href="#">Ready More</a>
+            </div>
+            <div class='grid-item-star'>
+               <h2>Star-Gazing at <br>night Sky</h2>
+               <a href="#">Ready More</a>
+            </div>
+            <div class='front-page-more-adventure'>
+            <a href="#">More adventures</a>
+            </div>
+
+         </div>
+      </section>
+
+
+
 
    </main><!-- #main -->
 </div><!-- #primary -->
