@@ -8,22 +8,17 @@
 .four-content-area {
 	max-width: 80%;
 	margin: 0 auto;
-
 	ul {
 		margin-left: 0;
 		padding: 10px;
-
 		li {
 			list-style-type: none;
-
 			a {
 				text-decoration: none;
 				color: #248A83;
-
 			}
 		}
 	}
-
 	.search-text-four {
 		p {
 			color: #248A83;
@@ -48,60 +43,86 @@
 	display: flex;
 	flex-flow: row;
 	align-items: flex-end;
-
-
 }
 
-
-
 //Header for all pages
+.icon-search{
+	color: #fff;
+	cursor: pointer;
+	margin-right: 20px;
+}
 
 .header-search-bar {
 	max-width: 200px;
-
-	// font-size: 10px;
-	fieldset {}
-
+	transition: width 4s ease-in-out;
+	label{
+		color: white;
+	}
+	fieldset{
+		width: 400px;
+		text-align: center;
+		border: none;
+		padding: 17px;
+		position: relative;
+	}
 	input {
 		display: none;
+		transition: display 1s;
+		&:focus{
+			color: white;
+		}
+		
 	}
 }
+::placeholder{
+	color: white;
+	text-transform: uppercase;
+}
+.main-navigation{
+	display: flex;
+}
+
+.search-form {
+	display: flex;
+}
+
 
 .search-on label {
 	input {
 		display: initial;
-		font-size: 10px;
+		font-size: 15px;
+		color: white;
+		background: transparent;
 	}
 }
 
 .nav-header-flexbox {
 	display: flex;
+	position: absolute;
 	justify-content: flex-start;
-	max-width: 1200px;
+	width: 90%;
 	z-index: 200;
 	margin: 0 auto;
 	border: none;
+	align-items: center;
+	
 
 	.header-logo-img {
 		height: 50px;
 		width: 50px;
-		margin-left: 20px;
+		margin-left: 40px;
 		background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
 		background-size: contain;
 		margin-top: 10px;
 		border: none;
 	}
-
-	nav {
-		width: 50%;
-		justify-self: flex-end;
-		margin: 0 300px;
-
+	.menu-menu-1-container {
+		width: 100%;
 	}
 
 	ul {
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-end;
 		align-items: center;
 		padding: 20px;
 		text-transform: uppercase;
@@ -109,18 +130,17 @@
 		font-weight: bold;
 
 		li {
-
+			color: white;
 			a {
 				color: white;
 				text-decoration: none;
-
+				padding: 1rem;
 				&:hover {
 					color: #d99054;
 				}
 			}
 		}
 	}
-
 }
 
 .no-large-image {
@@ -129,52 +149,43 @@
 		margin-bottom: 10px;
 		width: 100%;
 		background: #e6e3e3;
-		;
 	}
 
 	.nav-header-flexbox {
-
+		position: relative;
+		width: 90%;
 		.header-logo-img {
-			// display:none;
 			background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
 			background-size: contain;
 			margin-top: 10px;
 			border: none;
 		}
-
-		nav {}
-
 		ul {
-			display: flex;
-			justify-content: space-evenly;
-			align-items: center;
-			padding: 20px;
-			text-transform: uppercase;
-			width: 100%;
-			font-weight: bold;
-
+			padding: 0;
 			li {
-
 				a {
 					color: #248A83;
 					text-decoration: none;
-
 					&:hover {
 						color: black;
 					}
 				}
 			}
 		}
-
 	}
-
+	::placeholder{
+		color: #248A83;
+		text-transform: uppercase;
+	}
+	.icon-search{
+		color: #248A83;
+	}
 }
 
 
 //Front page
-
 .main-img-logo {
-	position: relative;
+
 	margin: 0;
 	background:
 		linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
@@ -182,26 +193,18 @@
 	background-size: cover, cover;
 	height: 100vh;
 	width: 100%;
-	// position: absolute;
-	top: -65px;
-	z-index: -100;
-
 	img {
 		position: absolute;
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%, -50%);
-
 	}
 }
 
 //front page products 
-
 .product-info {
 	max-width: 1200px;
 	margin: 0 auto;
-
-
 	h2 {
 		font-family: 'Novecento Sans Web';
 		text-align: center;
@@ -223,22 +226,17 @@
 	display: flex;
 	flex-flow: column;
 	align-content: center;
-	// max-width: 250px;
 	padding: 30px 10px;
 	border: 1px solid #e1e1e1;
 	border-top-width: 5px;
 	margin: 0 20px;
-
 	&:hover {
 		border-color: #d99054;
 	}
-
-
 	img {
 		width: 35%;
 		margin: 0 auto;
 	}
-
 	p {
 		margin: 0 auto;
 		text-align: center;
@@ -286,8 +284,6 @@
 	margin-top: 10px;
 }
 
-.front-page-post-date {}
-
 .front-page-journal-thumbnail {
 	height: 245px;
 	width: 370px;
@@ -298,8 +294,6 @@
 	}
 }
 
-.front-page-post-comment {}
-
 .front-page-post-title {
 
 	a {
@@ -308,20 +302,16 @@
 		color: #248A83;
 		font-size: 1.4em;
 		font-weight: bold;
-
 		&:hover {
 			color: black;
 		}
 	}
-
 }
 
 .front-page-post-permalink {
 	padding: 20px;
 	position: relative;
 	margin: 10px;
-
-
 	a {
 		position: absolute;
 		transform: translate(-25px, -20px);
@@ -330,7 +320,6 @@
 		text-decoration: none;
 		border: 1px solid #000;
 		color: #000;
-
 		&:hover {
 			background: #248A83;
 			color: white;
@@ -356,7 +345,6 @@
 		color: white;
 		font-size:2.2em;
 		margin-left: 20px;
-		
 	}
 	a{
 		text-decoration: none;
@@ -392,9 +380,6 @@
 	grid-row: 50% 50%;
 	grid-gap: 10px;
 	height: 700px;
-	
-
-	
 }
 
 .grid-item-canoe {
@@ -439,8 +424,6 @@
 	}
 }
 
-
-
 //archive single category
 .archive-page-main {
 	max-width: 740px;
@@ -459,14 +442,11 @@ div.archive-page-title {
 		margin: 30px auto;
 		padding: 20px;
 		font-size: 1.8em;
-		// border-bottom: 1px dashed #c8c8c8;
 	}
 }
 
 
-
 //archive product page
-
 .archive-page-main {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -477,7 +457,6 @@ div.archive-page-title {
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 0.2em;
-
 }
 
 .archive-page-nav {
@@ -512,7 +491,6 @@ div.archive-page-title {
 
 
 .archive-product-grid-item {
-
 	img {
 		widows: 100%;
 		max-height: 180px;
@@ -545,12 +523,9 @@ div.archive-page-title {
 }
 
 // Single product page
-
-
 .single-product-container {
 	max-width: 60%;
 	margin: 0 auto;
-
 	article {
 		width: 100%;
 	}
@@ -561,36 +536,26 @@ div.archive-page-title {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
 	.single-product-thumbnail {
 		width: 50%;
 		padding: 10px;
 	}
-
 	.single-product-text {
 		width: 50%;
 		padding: 10px;
-
 		.entry-title {
 			color: #d99054;
 			text-transform: uppercase;
 		}
-
 		.single-product-price {
 			font-size: 1.8em;
 			font-family: Novecento Sans Web;
 		}
-
 		.entry-content {
 			text-align: justify;
 		}
 	}
-
 }
-
-
-
-
 
 
 //Adventure Page
@@ -636,7 +601,6 @@ div.archive-page-title {
 }
 
 .about-content {
-
 	h3 {
 		text-align: center;
 		max-width: 740px;
@@ -657,7 +621,6 @@ div.archive-page-title {
 
 
 // Post page 
-
 .article-journal {
 	margin: 30px auto;
 	max-width: 740px;
@@ -717,12 +680,9 @@ body article header.journal-header {
 }
 
 //Single page Journal
-
 body article header.single-journal-header {
 	position: relative;
 	max-width: 740px;
-
-
 	img {
 		object-fit: fill;
 		width: 100%;
@@ -823,8 +783,6 @@ form {
 		font-family: Novecento Sans Web;
 	}
 
-	p label {}
-
 	textarea {
 		background: #cecbcb;
 	}
@@ -841,7 +799,6 @@ form {
 }
 
 //Find us page
-
 .site-content {
 	display: flex;
 	width: 100%;
@@ -855,28 +812,20 @@ form {
 	text-transform: uppercase;
 	max-width: 740px;
 	margin: 0 auto;
-
-
-
-
 	h4 {
 		font-size: 2em;
 	}
-
 	p {
 		text-align: justify;
-
 		input {
 			text-transform: uppercase;
 			background: #248A83;
 			color: white;
 		}
 	}
-
 	p label input {
 		background: #a1a1a1;
 	}
-
 	textarea {
 		background: #a1a1a1;
 	}
@@ -897,13 +846,11 @@ aside {
 		margin: 0;
 		padding: 0;
 	}
-
 	li {
 		display: block;
 		list-style-type: none;
 		text-align: left;
 	}
-
 	a {
 		text-decoration: none;
 		color: #248A83;
@@ -913,7 +860,6 @@ aside {
 .contact-box-sidebar {
 	a {
 		color: black;
-
 		&:hover {
 			color: #d99054;
 		}
@@ -951,7 +897,6 @@ aside {
 }
 
 .page-content,
-.entry-content,
 .entry-summary {
 	margin: $base__space-unit 0 0;
 }

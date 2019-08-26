@@ -28,24 +28,25 @@
 		<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html('Skip to content'); ?></a>
 
 		<header id="masthead" class="site-header" role="banner">
-			
+
 			<div class='nav-back-color'>
 				<div class='nav-header-flexbox'>
 					<div>
 						<a href="<?php echo get_home_url(); ?>">
-						<div class='header-logo-img'></div>
-							
+							<div class='header-logo-img'></div>
+
 						</a>
 					</div>
 
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>
 						<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
+
 						
 					</nav><!-- #site-navigation -->
 					<div id='nave-search' class='header-search-bar'>
-					    <?php get_search_form(); ?>
-</div>
+						<?php get_search_form(); ?>
+					</div>
 				</div>
 			</div>
 

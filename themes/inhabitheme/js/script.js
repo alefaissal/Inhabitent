@@ -7,7 +7,7 @@
     $(function() {
       const $input = $('.search-field');
       const $searchBar = $('.header-search-bar');
-      $('.search-submit').on('click', function() {
+      $('.site-header .icon-search').on('click', function() {
         if ($input.val().length === 0) {
             event.preventDefault();
           }
@@ -23,7 +23,7 @@
       });
     });
 
-
+    // $('#primary-menu').append('<li id="search-icon" > <i class="fas fa-search"></i></li>');
 
 
   })(jQuery);

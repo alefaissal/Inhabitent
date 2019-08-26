@@ -68,10 +68,16 @@ function my_custom_login_url($url)
 }
 add_filter('login_headerurl', 'my_custom_login_url');
 
+
+
 add_filter( 'body_class', 'addBodyClass' );
 
 function addBodyClass( $classes ) {
-  if( is_front_page() || strpos( get_page_template_slug( get_the_ID() ), 'page-about' ) > 0 || is_singular( 'adventure_type' ) ) {
+    
+// d( is_page_template('page-about.php') );
+// d( is_page( 'About' ) );
+
+  if( is_front_page() || is_page( 'About' ) || is_singular( 'adventure_type' ) ) {
     // $classes[] = 'large-image';
   }else{
     $classes[] = 'no-large-image'; 
@@ -79,6 +85,8 @@ function addBodyClass( $classes ) {
 
   return $classes;
 }
+
+
 
 add_filter( 'get_the_archive_title', function ( $title ) {
 
