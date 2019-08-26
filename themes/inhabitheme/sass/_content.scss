@@ -8,17 +8,21 @@
 .four-content-area {
 	max-width: 80%;
 	margin: 0 auto;
+
 	ul {
 		margin-left: 0;
 		padding: 10px;
+
 		li {
 			list-style-type: none;
+
 			a {
 				text-decoration: none;
 				color: #248A83;
 			}
 		}
 	}
+
 	.search-text-four {
 		p {
 			color: #248A83;
@@ -46,7 +50,7 @@
 }
 
 //Header for all pages
-.icon-search{
+.icon-search {
 	color: #fff;
 	cursor: pointer;
 	margin-right: 20px;
@@ -55,30 +59,35 @@
 .header-search-bar {
 	max-width: 200px;
 	transition: width 4s ease-in-out;
-	label{
+
+	label {
 		color: white;
 	}
-	fieldset{
+
+	fieldset {
 		width: 400px;
 		text-align: center;
 		border: none;
 		padding: 17px;
 		position: relative;
 	}
+
 	input {
-		display: none;
-		transition: display 1s;
-		&:focus{
+		display: none; /////////////////////////////
+
+		&:focus {
 			color: white;
 		}
-		
+
 	}
 }
-::placeholder{
+
+::placeholder {
 	color: white;
 	text-transform: uppercase;
 }
-.main-navigation{
+
+.main-navigation {
 	display: flex;
 }
 
@@ -89,7 +98,7 @@
 
 .search-on label {
 	input {
-		display: initial;
+		display: initial; ///////////////////////////
 		font-size: 15px;
 		color: white;
 		background: transparent;
@@ -105,7 +114,7 @@
 	margin: 0 auto;
 	border: none;
 	align-items: center;
-	
+
 
 	.header-logo-img {
 		height: 50px;
@@ -116,6 +125,7 @@
 		margin-top: 10px;
 		border: none;
 	}
+
 	.menu-menu-1-container {
 		width: 100%;
 	}
@@ -131,10 +141,12 @@
 
 		li {
 			color: white;
+
 			a {
 				color: white;
 				text-decoration: none;
 				padding: 1rem;
+
 				&:hover {
 					color: #d99054;
 				}
@@ -154,18 +166,22 @@
 	.nav-header-flexbox {
 		position: relative;
 		width: 90%;
+
 		.header-logo-img {
 			background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
 			background-size: contain;
 			margin-top: 10px;
 			border: none;
 		}
+
 		ul {
 			padding: 0;
+
 			li {
 				a {
 					color: #248A83;
 					text-decoration: none;
+
 					&:hover {
 						color: black;
 					}
@@ -173,12 +189,25 @@
 			}
 		}
 	}
-	::placeholder{
+
+	::placeholder {
 		color: #248A83;
 		text-transform: uppercase;
 	}
-	.icon-search{
+
+	.icon-search {
 		color: #248A83;
+	}
+
+	.header-search-bar {
+		input {
+			color: #248A83;
+
+			&:focus {
+				color: #248A83;
+			}
+
+		}
 	}
 }
 
@@ -193,6 +222,7 @@
 	background-size: cover, cover;
 	height: 100vh;
 	width: 100%;
+
 	img {
 		position: absolute;
 		left: 50%;
@@ -205,6 +235,7 @@
 .product-info {
 	max-width: 1200px;
 	margin: 0 auto;
+
 	h2 {
 		font-family: 'Novecento Sans Web';
 		text-align: center;
@@ -230,13 +261,16 @@
 	border: 1px solid #e1e1e1;
 	border-top-width: 5px;
 	margin: 0 20px;
+
 	&:hover {
 		border-color: #d99054;
 	}
+
 	img {
 		width: 35%;
 		margin: 0 auto;
 	}
+
 	p {
 		margin: 0 auto;
 		text-align: center;
@@ -302,6 +336,7 @@
 		color: #248A83;
 		font-size: 1.4em;
 		font-weight: bold;
+
 		&:hover {
 			color: black;
 		}
@@ -312,6 +347,7 @@
 	padding: 20px;
 	position: relative;
 	margin: 10px;
+
 	a {
 		position: absolute;
 		transform: translate(-25px, -20px);
@@ -320,6 +356,7 @@
 		text-decoration: none;
 		border: 1px solid #000;
 		color: #000;
+
 		&:hover {
 			background: #248A83;
 			color: white;
@@ -331,6 +368,7 @@
 //Front page more adventures
 .more-adventures {
 	position: relative;
+
 	h1 {
 		max-width: 1200px;
 		margin: 60px auto;
@@ -341,12 +379,14 @@
 		font-weight: 400;
 		font-style: normal;
 	}
-	h2{
+
+	h2 {
 		color: white;
-		font-size:2.2em;
+		font-size: 2.2em;
 		margin-left: 20px;
 	}
-	a{
+
+	a {
 		text-decoration: none;
 		color: white;
 		text-transform: uppercase;
@@ -355,17 +395,19 @@
 		position: absolute;
 		margin-left: 20px;
 		font-weight: bold;
-		&:hover{
+
+		&:hover {
 			color: #d99054;
 		}
 	}
 
-	.front-page-more-adventure{
-		a{
+	.front-page-more-adventure {
+		a {
 			position: absolute;
 			background: #248A83;
 			margin: 20px 0;
-			&:hover{
+
+			&:hover {
 				color: #d99054;
 			}
 		}
@@ -389,7 +431,8 @@
 		linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
 		url(../../images/adventure-photos/canoe-girl.jpg);
 	background-size: cover, cover;
-	a{
+
+	a {
 		top: 300px;
 	}
 }
@@ -419,7 +462,8 @@
 		linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
 		url(../../images/adventure-photos/beach-bonfire.jpg);
 	background-size: cover, cover;
-	a{
+
+	a {
 		top: 530px;
 	}
 }
@@ -526,6 +570,7 @@ div.archive-page-title {
 .single-product-container {
 	max-width: 60%;
 	margin: 0 auto;
+
 	article {
 		width: 100%;
 	}
@@ -536,21 +581,26 @@ div.archive-page-title {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
 	.single-product-thumbnail {
 		width: 50%;
 		padding: 10px;
 	}
+
 	.single-product-text {
 		width: 50%;
 		padding: 10px;
+
 		.entry-title {
 			color: #d99054;
 			text-transform: uppercase;
 		}
+
 		.single-product-price {
 			font-size: 1.8em;
 			font-family: Novecento Sans Web;
 		}
+
 		.entry-content {
 			text-align: justify;
 		}
@@ -683,6 +733,7 @@ body article header.journal-header {
 body article header.single-journal-header {
 	position: relative;
 	max-width: 740px;
+
 	img {
 		object-fit: fill;
 		width: 100%;
@@ -812,20 +863,25 @@ form {
 	text-transform: uppercase;
 	max-width: 740px;
 	margin: 0 auto;
+
 	h4 {
 		font-size: 2em;
 	}
+
 	p {
 		text-align: justify;
+
 		input {
 			text-transform: uppercase;
 			background: #248A83;
 			color: white;
 		}
 	}
+
 	p label input {
 		background: #a1a1a1;
 	}
+
 	textarea {
 		background: #a1a1a1;
 	}
@@ -846,11 +902,13 @@ aside {
 		margin: 0;
 		padding: 0;
 	}
+
 	li {
 		display: block;
 		list-style-type: none;
 		text-align: left;
 	}
+
 	a {
 		text-decoration: none;
 		color: #248A83;
@@ -860,6 +918,7 @@ aside {
 .contact-box-sidebar {
 	a {
 		color: black;
+
 		&:hover {
 			color: #d99054;
 		}
@@ -873,6 +932,41 @@ aside {
 //Single - Journal page
 
 
+
+
+//Search page
+.search-main {
+	width: 60%;
+	margin: 0 auto;
+
+	.search-header {
+		font-size: 1.5em;
+		text-align: center;
+	}
+	.entry-title{
+		a{
+			text-decoration: none;
+			color: #248A83;
+			font-size: 1.5em;
+			&:hover{
+				color: #d99054;
+			}
+		}
+	}
+	.search-article .search-text{
+		p{
+			text-align: justify;
+			font-size: 1.2em;
+		}
+	}
+	
+}
+.search-not-fund-text{
+	p{
+		text-align: justify;
+		font-size: 1.5em;
+	}
+}
 
 
 

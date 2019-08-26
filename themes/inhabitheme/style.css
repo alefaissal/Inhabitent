@@ -678,9 +678,7 @@ a {
     padding: 17px;
     position: relative; }
   .header-search-bar input {
-    display: none;
-    -webkit-transition: display 1s;
-    transition: display 1s; }
+    display: none; }
     .header-search-bar input:focus {
       color: white; }
 
@@ -796,6 +794,11 @@ a {
 
 .no-large-image .icon-search {
   color: #248A83; }
+
+.no-large-image .header-search-bar input {
+  color: #248A83; }
+  .no-large-image .header-search-bar input:focus {
+    color: #248A83; }
 
 .main-img-logo {
   margin: 0;
@@ -1335,6 +1338,26 @@ aside a {
 
 .widget-area {
   margin: 0 50px; }
+
+.search-main {
+  width: 60%;
+  margin: 0 auto; }
+  .search-main .search-header {
+    font-size: 1.5em;
+    text-align: center; }
+  .search-main .entry-title a {
+    text-decoration: none;
+    color: #248A83;
+    font-size: 1.5em; }
+    .search-main .entry-title a:hover {
+      color: #d99054; }
+  .search-main .search-article .search-text p {
+    text-align: justify;
+    font-size: 1.2em; }
+
+.search-not-fund-text p {
+  text-align: justify;
+  font-size: 1.5em; }
 
 .sticky {
   display: block; }
