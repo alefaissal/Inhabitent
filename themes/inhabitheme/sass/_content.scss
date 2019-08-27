@@ -18,14 +18,14 @@
 
 			a {
 				text-decoration: none;
-				color: #248A83;
+				color: $darkGreen;
 			}
 		}
 	}
 
 	.search-text-four {
 		p {
-			color: #248A83;
+			color: $darkGreen;
 		}
 	}
 }
@@ -51,17 +51,16 @@
 
 //Header for all pages
 .icon-search {
-	color: #fff;
+	color: $white;
 	cursor: pointer;
 	margin-right: 20px;
 }
 
 .header-search-bar {
 	max-width: 200px;
-	transition: width 4s ease-in-out;
 
 	label {
-		color: white;
+		color: $white;
 	}
 
 	fieldset {
@@ -73,17 +72,18 @@
 	}
 
 	input {
-		display: none; /////////////////////////////
+		width: 0;
+		opacity: 0;
+		transition: all 1s;
 
 		&:focus {
-			color: white;
+			color: $white;
 		}
-
 	}
 }
 
 ::placeholder {
-	color: white;
+	color: $white;
 	text-transform: uppercase;
 }
 
@@ -95,12 +95,12 @@
 	display: flex;
 }
 
-
 .search-on label {
 	input {
-		display: initial; ///////////////////////////
+		width: 200px;
+		opacity: 1;
 		font-size: 15px;
-		color: white;
+		color: $white;
 		background: transparent;
 	}
 }
@@ -140,15 +140,17 @@
 		font-weight: bold;
 
 		li {
-			color: white;
+			color: $white;
 
 			a {
-				color: white;
+				font-family: 'Novecento Sans Web';
+				font-weight: 400;
+				color: $white;
 				text-decoration: none;
 				padding: 1rem;
 
 				&:hover {
-					color: #d99054;
+					color: $orangeHover;
 				}
 			}
 		}
@@ -157,10 +159,10 @@
 
 .no-large-image {
 	.nav-back-color {
-		border-bottom: solid 1px black;
+		border-bottom: solid 1px $black;
 		margin-bottom: 10px;
 		width: 100%;
-		background: #e6e3e3;
+		background: $background;
 	}
 
 	.nav-header-flexbox {
@@ -179,11 +181,11 @@
 
 			li {
 				a {
-					color: #248A83;
+					color: $darkGreen;
 					text-decoration: none;
 
 					&:hover {
-						color: black;
+						color: $black;
 					}
 				}
 			}
@@ -191,20 +193,20 @@
 	}
 
 	::placeholder {
-		color: #248A83;
+		color: $darkGreen;
 		text-transform: uppercase;
 	}
 
 	.icon-search {
-		color: #248A83;
+		color: $darkGreen;
 	}
 
 	.header-search-bar {
 		input {
-			color: #248A83;
+			color: $darkGreen;
 
 			&:focus {
-				color: #248A83;
+				color: $darkGreen;
 			}
 
 		}
@@ -263,7 +265,7 @@
 	margin: 0 20px;
 
 	&:hover {
-		border-color: #d99054;
+		border-color: $orangeHover;
 	}
 
 	img {
@@ -282,8 +284,8 @@
 		padding: 10px;
 		text-decoration: none;
 		text-transform: uppercase;
-		background: #248A83;
-		color: white;
+		background: $darkGreen;
+		color: $white;
 	}
 }
 
@@ -333,12 +335,12 @@
 	a {
 		text-transform: uppercase;
 		text-decoration: none;
-		color: #248A83;
+		color: $darkGreen;
 		font-size: 1.4em;
 		font-weight: bold;
 
 		&:hover {
-			color: black;
+			color: $black;
 		}
 	}
 }
@@ -354,12 +356,12 @@
 		padding: 10px;
 		text-transform: uppercase;
 		text-decoration: none;
-		border: 1px solid #000;
-		color: #000;
+		border: 1px solid $black;
+		color: $black;
 
 		&:hover {
-			background: #248A83;
-			color: white;
+			background: $darkGreen;
+			color: $white;
 		}
 	}
 }
@@ -368,11 +370,12 @@
 //Front page more adventures
 .more-adventures {
 	position: relative;
+	font-family: 'Merriweather Web';
 
 	h1 {
 		max-width: 1200px;
 		margin: 60px auto;
-		font-family: Novecento Sans Web;
+		font-family: 'Merriweather Web';
 		text-align: center;
 		font-size: 40px;
 		text-transform: uppercase;
@@ -381,34 +384,38 @@
 	}
 
 	h2 {
-		color: white;
+		color: $white;
 		font-size: 2.2em;
 		margin-left: 20px;
+		font-family: 'Merriweather Web';
+		font-weight: 400;
 	}
 
 	a {
 		text-decoration: none;
-		color: white;
+		color: $white;
 		text-transform: uppercase;
 		padding: 20px;
-		border: solid 1px white;
+		border: solid 1px $white;
 		position: absolute;
 		margin-left: 20px;
 		font-weight: bold;
+		font-family: 'Novecento Sans Web';
+		font-weight: 400;
 
 		&:hover {
-			color: #d99054;
+			color: $orangeHover;
 		}
 	}
 
 	.front-page-more-adventure {
 		a {
 			position: absolute;
-			background: #248A83;
+			background: $darkGreen;
 			margin: 20px 0;
 
 			&:hover {
-				color: #d99054;
+				color: $orangeHover;
 			}
 		}
 	}
@@ -515,8 +522,9 @@ div.archive-page-title {
 			a {
 				font-size: 1.2em;
 				text-transform: uppercase;
-				color: #248A83;
-				font-family: Merriweather Web;
+				color: $darkGreen;
+				font-family: 'Novecento Sans Web';
+				font-weight: 400;
 				text-decoration: none;
 			}
 
@@ -592,7 +600,7 @@ div.archive-page-title {
 		padding: 10px;
 
 		.entry-title {
-			color: #d99054;
+			color: $orangeHover;
 			text-transform: uppercase;
 		}
 
@@ -645,7 +653,7 @@ div.archive-page-title {
 .hero-image-header {
 	height: 100vh;
 	width: 100%;
-	color: white;
+	color: $white;
 	font-size: 1.2em;
 	text-transform: uppercase;
 }
@@ -656,6 +664,7 @@ div.archive-page-title {
 		max-width: 740px;
 		margin: 20px auto;
 		font-size: 2em;
+		text-transform: uppercase;
 	}
 
 	p {
@@ -687,11 +696,11 @@ body article header.journal-header {
 }
 
 .journal-title a {
-	background: #248A83;
+	background: $darkGreen;
 	position: absolute;
 	top: 40px;
 	left: 0;
-	color: white;
+	color: $white;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 34px;
@@ -701,12 +710,15 @@ body article header.journal-header {
 
 .journal-meta {
 	position: absolute;
-	background: #248A83;
+	background: $darkGreen;
 	bottom: 7px;
 	right: 0;
-	color: white;
+	color: $white;
 	padding: 2px 30px;
 	margin: 0;
+	text-transform: uppercase;
+	font-family: 'Novecento Sans Web';
+	font-weight: 400;
 }
 
 .journal-content {
@@ -719,12 +731,12 @@ body article header.journal-header {
 		padding: 10px;
 		text-transform: uppercase;
 		text-decoration: none;
-		border: 1px solid #000;
-		color: #000;
+		border: 1px solid $black;
+		color: $black;
 
 		&:hover {
-			background: #248A83;
-			color: white;
+			background: $darkGreen;
+			color: $white;
 		}
 	}
 }
@@ -741,11 +753,11 @@ body article header.single-journal-header {
 }
 
 .single-journal-title {
-	background: #248A83;
+	background: $darkGreen;
 	position: absolute;
 	top: 40px;
 	left: 0;
-	color: white;
+	color: $white;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 1em;
@@ -755,19 +767,19 @@ body article header.single-journal-header {
 
 .single-journal-meta {
 	position: absolute;
-	background: #248A83;
+	background: $darkGreen;
 	bottom: 7px;
 	right: 0;
-	color: white;
+	color: $white;
 	padding: 2px 30px;
 	margin: 0;
 
 	a {
-		color: white;
+		color: $white;
 		text-decoration: none;
 
 		&:hover {
-			color: black;
+			color: $black;
 		}
 	}
 }
@@ -797,10 +809,10 @@ body article header.single-journal-header {
 
 	a {
 		text-decoration: none;
-		color: #248A83;
+		color: $darkGreen;
 
 		&:hover {
-			color: black;
+			color: $black
 		}
 	}
 
@@ -829,13 +841,18 @@ form {
 
 	.form-submit input {
 		text-transform: uppercase;
-		background: #248A83;
-		color: white;
+		background: $darkGreen;
+		color: $white;
 		font-family: Novecento Sans Web;
+		box-shadow: none;
+		&:hover {
+			box-shadow: none;
+			color: $orangeHover;
+		}
 	}
 
 	textarea {
-		background: #cecbcb;
+		background: $formTextArea;
 	}
 }
 
@@ -848,6 +865,70 @@ form {
 	max-width: 740px;
 	margin: 0 auto;
 }
+
+//single journal comment space
+.fn{
+	text-transform: capitalize;
+	font-weight: bold;
+	background: none;
+}
+.comment-reply-link{
+	text-decoration: none;
+	color: $darkGreen;
+}
+.comment-metadata{
+	a{
+		text-decoration: none;
+		color: $darkGreen;
+	}
+}
+
+.form-submit input {
+	text-transform: uppercase;
+	background: $darkGreen;
+	color: $white;
+	font-family: Novecento Sans Web;
+	box-shadow: none;
+	&:hover {
+		box-shadow: none;
+		color: $orangeHover;
+	}
+}
+
+#author, #email, #url {
+	background: $formTextArea;
+}
+.comment-form-author{
+	margin-right: 1%;
+	margin-bottom: 1.5rem;
+	width: 49%;
+	float: left;
+	input{
+		width: 100%;
+	}
+}
+.comment-form-email{
+	margin-left: 1%;
+	margin-bottom: 1.5rem;
+	width: 49%;
+	float: left;
+	input{
+		width: 100%;
+	}
+}
+.comment-form-url{
+	clear: left;
+	width: 100%;
+	margin-bottom: 1.5rem;
+	input{
+		width: 100%;
+	}
+}
+.comment-form-cookies-consent{
+	display: none;
+}
+
+
 
 //Find us page
 .site-content {
@@ -870,20 +951,33 @@ form {
 
 	p {
 		text-align: justify;
+		text-transform: capitalize;
 
 		input {
 			text-transform: uppercase;
-			background: #248A83;
-			color: white;
+			background: $darkGreen;
+			color: $white;
+			box-shadow: none;
+			font-family: 'Novecento Sans Web';
+			font-weight: 400;
+			&:hover {
+				box-shadow: none;
+				color: $orangeHover;
+			}
+		}
+
+		label {
+			text-transform: uppercase;
+			input {
+				background: $formTextArea;
+			}
 		}
 	}
 
-	p label input {
-		background: #a1a1a1;
-	}
+
 
 	textarea {
-		background: #a1a1a1;
+		background: $formTextArea;
 	}
 }
 
@@ -911,16 +1005,16 @@ aside {
 
 	a {
 		text-decoration: none;
-		color: #248A83;
+		color: $darkGreen;
 	}
 }
 
 .contact-box-sidebar {
 	a {
-		color: black;
+		color: $black;
 
 		&:hover {
-			color: #d99054;
+			color: $orangeHover;
 		}
 	}
 }
@@ -943,26 +1037,30 @@ aside {
 		font-size: 1.5em;
 		text-align: center;
 	}
-	.entry-title{
-		a{
+
+	.entry-title {
+		a {
 			text-decoration: none;
-			color: #248A83;
+			color: $darkGreen;
 			font-size: 1.5em;
-			&:hover{
-				color: #d99054;
+
+			&:hover {
+				color: $orangeHover;
 			}
 		}
 	}
-	.search-article .search-text{
-		p{
+
+	.search-article .search-text {
+		p {
 			text-align: justify;
 			font-size: 1.2em;
 		}
 	}
-	
+
 }
-.search-not-fund-text{
-	p{
+
+.search-not-fund-text {
+	p {
 		text-align: justify;
 		font-size: 1.5em;
 	}

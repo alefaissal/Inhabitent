@@ -661,14 +661,12 @@ a {
           align-items: flex-end; }
 
 .icon-search {
-  color: #fff;
+  color: white;
   cursor: pointer;
   margin-right: 20px; }
 
 .header-search-bar {
-  max-width: 200px;
-  -webkit-transition: width 4s ease-in-out;
-  transition: width 4s ease-in-out; }
+  max-width: 200px; }
   .header-search-bar label {
     color: white; }
   .header-search-bar fieldset {
@@ -678,7 +676,10 @@ a {
     padding: 17px;
     position: relative; }
   .header-search-bar input {
-    display: none; }
+    width: 0;
+    opacity: 0;
+    -webkit-transition: all 1s;
+    transition: all 1s; }
     .header-search-bar input:focus {
       color: white; }
 
@@ -705,7 +706,8 @@ a {
   display: flex; }
 
 .search-on label input {
-  display: initial;
+  width: 200px;
+  opacity: 1;
   font-size: 15px;
   color: white;
   background: transparent; }
@@ -752,6 +754,8 @@ a {
     .nav-header-flexbox ul li {
       color: white; }
       .nav-header-flexbox ul li a {
+        font-family: 'Novecento Sans Web';
+        font-weight: 400;
         color: white;
         text-decoration: none;
         padding: 1rem; }
@@ -919,18 +923,19 @@ a {
     padding: 10px;
     text-transform: uppercase;
     text-decoration: none;
-    border: 1px solid #000;
-    color: #000; }
+    border: 1px solid black;
+    color: black; }
     .front-page-post-permalink a:hover {
       background: #248A83;
       color: white; }
 
 .more-adventures {
-  position: relative; }
+  position: relative;
+  font-family: 'Merriweather Web'; }
   .more-adventures h1 {
     max-width: 1200px;
     margin: 60px auto;
-    font-family: Novecento Sans Web;
+    font-family: 'Merriweather Web';
     text-align: center;
     font-size: 40px;
     text-transform: uppercase;
@@ -939,7 +944,9 @@ a {
   .more-adventures h2 {
     color: white;
     font-size: 2.2em;
-    margin-left: 20px; }
+    margin-left: 20px;
+    font-family: 'Merriweather Web';
+    font-weight: 400; }
   .more-adventures a {
     text-decoration: none;
     color: white;
@@ -948,7 +955,9 @@ a {
     border: solid 1px white;
     position: absolute;
     margin-left: 20px;
-    font-weight: bold; }
+    font-weight: bold;
+    font-family: 'Novecento Sans Web';
+    font-weight: 400; }
     .more-adventures a:hover {
       color: #d99054; }
   .more-adventures .front-page-more-adventure a {
@@ -1036,7 +1045,8 @@ div.archive-page-title .month-title {
     font-size: 1.2em;
     text-transform: uppercase;
     color: #248A83;
-    font-family: Merriweather Web;
+    font-family: 'Novecento Sans Web';
+    font-weight: 400;
     text-decoration: none; }
 
 .archive-product-grid {
@@ -1139,7 +1149,8 @@ div.archive-page-title .month-title {
   text-align: center;
   max-width: 740px;
   margin: 20px auto;
-  font-size: 2em; }
+  font-size: 2em;
+  text-transform: uppercase; }
 
 .about-content p {
   text-align: justify;
@@ -1179,7 +1190,10 @@ body article header.journal-header {
   right: 0;
   color: white;
   padding: 2px 30px;
-  margin: 0; }
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'Novecento Sans Web';
+  font-weight: 400; }
 
 .journal-content {
   max-width: 640px;
@@ -1189,8 +1203,8 @@ body article header.journal-header {
   padding: 10px;
   text-transform: uppercase;
   text-decoration: none;
-  border: 1px solid #000;
-  color: #000; }
+  border: 1px solid black;
+  color: black; }
   .journal-page-read-more a:hover {
     background: #248A83;
     color: white; }
@@ -1272,9 +1286,15 @@ form {
     text-transform: uppercase;
     background: #248A83;
     color: white;
-    font-family: Novecento Sans Web; }
+    font-family: Novecento Sans Web;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+    form .form-submit input:hover {
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      color: #d99054; }
   form textarea {
-    background: #cecbcb; }
+    background: #f4f4f4; }
 
 .entry-footer {
   max-width: 740px;
@@ -1283,6 +1303,60 @@ form {
 .single-journal-comments-container {
   max-width: 740px;
   margin: 0 auto; }
+
+.fn {
+  text-transform: capitalize;
+  font-weight: bold;
+  background: none; }
+
+.comment-reply-link {
+  text-decoration: none;
+  color: #248A83; }
+
+.comment-metadata a {
+  text-decoration: none;
+  color: #248A83; }
+
+.form-submit input {
+  text-transform: uppercase;
+  background: #248A83;
+  color: white;
+  font-family: Novecento Sans Web;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+  .form-submit input:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: #d99054; }
+
+#author, #email, #url {
+  background: #f4f4f4; }
+
+.comment-form-author {
+  margin-right: 1%;
+  margin-bottom: 1.5rem;
+  width: 49%;
+  float: left; }
+  .comment-form-author input {
+    width: 100%; }
+
+.comment-form-email {
+  margin-left: 1%;
+  margin-bottom: 1.5rem;
+  width: 49%;
+  float: left; }
+  .comment-form-email input {
+    width: 100%; }
+
+.comment-form-url {
+  clear: left;
+  width: 100%;
+  margin-bottom: 1.5rem; }
+  .comment-form-url input {
+    width: 100%; }
+
+.comment-form-cookies-consent {
+  display: none; }
 
 .site-content {
   display: -webkit-box;
@@ -1302,15 +1376,26 @@ form {
   .find-us-main h4 {
     font-size: 2em; }
   .find-us-main p {
-    text-align: justify; }
+    text-align: justify;
+    text-transform: capitalize; }
     .find-us-main p input {
       text-transform: uppercase;
       background: #248A83;
-      color: white; }
-  .find-us-main p label input {
-    background: #a1a1a1; }
+      color: white;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      font-family: 'Novecento Sans Web';
+      font-weight: 400; }
+      .find-us-main p input:hover {
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        color: #d99054; }
+    .find-us-main p label {
+      text-transform: uppercase; }
+      .find-us-main p label input {
+        background: #f4f4f4; }
   .find-us-main textarea {
-    background: #a1a1a1; }
+    background: #f4f4f4; }
 
 .find-us-header {
   font-size: 1.2em; }
@@ -1512,9 +1597,11 @@ object {
   width: 40%;
   padding: 50px; }
 
-.footer-title {
+span.footer-title {
   text-transform: uppercase;
-  color: #d99054; }
+  color: #d99054;
+  font-family: 'Novecento Sans Web';
+  font-weight: 700; }
 
 .copyright-box {
   text-transform: uppercase;

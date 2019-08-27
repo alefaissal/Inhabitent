@@ -26,6 +26,11 @@
     // $('#primary-menu').append('<li id="search-icon" > <i class="fas fa-search"></i></li>');
 
 
+$(function() {
+    $('.comment-form-author').prepend('<div class="journal-single-comment-author-email"');
+    $('.comment-form-email').apend('</div>');
+});
+
   })(jQuery);
 //IIFE
 
