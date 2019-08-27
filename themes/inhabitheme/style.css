@@ -1322,6 +1322,9 @@ form {
   max-width: 740px;
   margin: 0 auto; }
 
+.contact-box p i {
+  margin-right: 5px; }
+
 .social-buttons button {
   text-transform: uppercase;
   color: black;
