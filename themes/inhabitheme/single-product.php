@@ -23,9 +23,9 @@ get_header(); ?>
 					<div class='single-product-text'>
 						<?php
 							the_title('<h1 class="entry-title">', '</h1>'); ?>
-							<div class='single-product-price'>
-						$<?php echo CFS()->get('product_price'); ?>
-</div>
+						<div class='single-product-price'>
+							$<?php echo CFS()->get('product_price'); ?>
+						</div>
 						<div class="entry-content">
 							<?php the_content(); ?>
 							<?php
@@ -35,6 +35,13 @@ get_header(); ?>
 								));
 								?>
 						</div><!-- .entry-content -->
+						<div class="single-product-links-container">
+							<div class="social-buttons">
+								<button type="button" class="black-btn"><i class="fab fa-facebook"></i>Like</button>
+								<button type="button" class="black-btn"><i class="fab fa-twitter"></i>Tweet</button>
+								<button type="button" class="black-btn"><i class="fab fa-pinterest"></i>Pin</button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</article><!-- #post-## -->

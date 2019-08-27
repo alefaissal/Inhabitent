@@ -1304,6 +1304,26 @@ form {
   max-width: 740px;
   margin: 0 auto; }
 
+.social-buttons button {
+  text-transform: uppercase;
+  color: black;
+  font-family: Novecento Sans Web;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: white;
+  width: 120px;
+  height: 40px;
+  border: black solid 1px;
+  border-radius: 0;
+  font-size: 1em; }
+  .social-buttons button i {
+    margin-right: 5px; }
+  .social-buttons button:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: #248A83;
+    color: white; }
+
 .fn {
   text-transform: capitalize;
   font-weight: bold;
@@ -1329,7 +1349,9 @@ form {
             box-shadow: none;
     color: #d99054; }
 
-#author, #email, #url {
+#author,
+#email,
+#url {
   background: #f4f4f4; }
 
 .comment-form-author {
@@ -1338,7 +1360,8 @@ form {
   width: 49%;
   float: left; }
   .comment-form-author input {
-    width: 100%; }
+    width: 100%;
+    padding: 7px; }
 
 .comment-form-email {
   margin-left: 1%;
@@ -1346,14 +1369,16 @@ form {
   width: 49%;
   float: left; }
   .comment-form-email input {
-    width: 100%; }
+    width: 100%;
+    padding: 7px; }
 
 .comment-form-url {
   clear: left;
   width: 100%;
   margin-bottom: 1.5rem; }
   .comment-form-url input {
-    width: 100%; }
+    width: 100%;
+    padding: 7px; }
 
 .comment-form-cookies-consent {
   display: none; }
