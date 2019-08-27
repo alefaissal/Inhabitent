@@ -1166,6 +1166,15 @@ div.archive-page-title .month-title {
   max-width: 740px;
   margin: 20px auto; }
 
+.about-content :last-child {
+  margin-bottom: 100px; }
+
+.about-content :nth-child(2) {
+  margin-top: 80px; }
+
+.about-content :nth-child(5) {
+  margin-top: 50px; }
+
 .about-title {
   display: none; }
 

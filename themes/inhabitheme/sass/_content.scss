@@ -590,7 +590,7 @@ div.archive-page-title {
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 20px;
-	
+
 
 	.single-product-thumbnail {
 		width: 50%;
@@ -678,6 +678,15 @@ div.archive-page-title {
 		text-align: justify;
 		max-width: 740px;
 		margin: 20px auto;
+	}
+	:last-child{
+		margin-bottom: 100px;
+	}
+	:nth-child(2) {
+		margin-top: 80px;
+	}
+	:nth-child(5){
+		margin-top: 50px;
 	}
 }
 
