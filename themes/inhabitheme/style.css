@@ -969,7 +969,9 @@ a {
     background: #248A83;
     margin: 20px 0; }
     .more-adventures .front-page-more-adventure a:hover {
-      color: #d99054; }
+      color: black;
+      background: white;
+      border: 1px solid black; }
 
 .grid-container-front-page {
   max-width: 1200px;
@@ -979,6 +981,9 @@ a {
   grid-row: 50% 50%;
   grid-gap: 10px;
   height: 700px; }
+  .grid-container-front-page a:hover {
+    background: #248A83;
+    color: white; }
 
 .grid-item-canoe {
   grid-column: 1/2;
@@ -1010,7 +1015,7 @@ a {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../../images/adventure-photos/beach-bonfire.jpg);
   background-size: cover, cover; }
   .grid-item-star a {
-    top: 530px; }
+    top: 610px; }
 
 .archive-page-main {
   max-width: 740px;

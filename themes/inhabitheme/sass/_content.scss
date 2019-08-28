@@ -413,7 +413,9 @@
 			margin: 20px 0;
 
 			&:hover {
-				color: $orangeHover;
+				color: $black;
+				background: $white;
+				border: 1px solid $black;
 			}
 		}
 	}
@@ -427,6 +429,10 @@
 	grid-row: 50% 50%;
 	grid-gap: 10px;
 	height: 700px;
+	a:hover{
+		background: $darkGreen;
+		color: $white;
+	}
 }
 
 .grid-item-canoe {
@@ -469,7 +475,7 @@
 	background-size: cover, cover;
 
 	a {
-		top: 530px;
+		top: 610px;
 	}
 }
 
