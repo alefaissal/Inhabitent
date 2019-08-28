@@ -114,7 +114,6 @@
 	margin: 0 auto;
 	border: none;
 	align-items: center;
-	text-shadow: 1px 1px 2px #323232;
 	.header-logo-img {
 		height: 50px;
 		width: 50px;
@@ -139,12 +138,15 @@
 		font-weight: bold;
 		li {
 			color: $white;
+			
+			// text-shadow: 1px 1px 2px #323232;
 			a {
 				font-family: 'Novecento Sans Web';
 				font-weight: 400;
 				color: $white;
-				text-shadow: none;
 				padding: 1rem;
+				text-shadow: 1px 1px 2px #323232;
+				
 
 				&:hover {
 					color: $orangeHover;
@@ -166,7 +168,6 @@
 	.nav-header-flexbox {
 		position: relative;
 		width: 90%;
-		text-shadow: 1px 1px 2px #323232;
 		.header-logo-img {
 			background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
 			background-size: contain;
@@ -181,6 +182,7 @@
 				a {
 					color: $darkGreen;
 					text-decoration: none;
+					text-shadow: none;
 
 					&:hover {
 						color: $black;

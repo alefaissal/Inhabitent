@@ -726,8 +726,7 @@ a {
   border: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  text-shadow: 1px 1px 2px #323232; }
+          align-items: center; }
   .nav-header-flexbox .header-logo-img {
     height: 50px;
     width: 50px;
@@ -758,8 +757,8 @@ a {
         font-family: 'Novecento Sans Web';
         font-weight: 400;
         color: white;
-        text-shadow: none;
-        padding: 1rem; }
+        padding: 1rem;
+        text-shadow: 1px 1px 2px #323232; }
         .nav-header-flexbox ul li a:hover {
           color: #d99054; }
 
@@ -771,8 +770,7 @@ a {
 
 .no-large-image .nav-header-flexbox {
   position: relative;
-  width: 90%;
-  text-shadow: 1px 1px 2px #323232; }
+  width: 90%; }
   .no-large-image .nav-header-flexbox .header-logo-img {
     background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
     background-size: contain;
@@ -784,7 +782,8 @@ a {
       text-shadow: none; }
       .no-large-image .nav-header-flexbox ul li a {
         color: #248A83;
-        text-decoration: none; }
+        text-decoration: none;
+        text-shadow: none; }
         .no-large-image .nav-header-flexbox ul li a:hover {
           color: black; }
 
