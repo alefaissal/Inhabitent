@@ -1097,7 +1097,52 @@ aside {
 
 
 //archive adventures page
-
+.archive-page-title{
+	margin: 60px auto;
+	border-bottom: dashed 1px $background;
+	width: 1200px;
+	font-size: 1.2em;
+}
+.article-adventure-archive{
+	display: flex;
+	flex-flow: row wrap;
+	width: 1200px;
+	margin: 60px auto;
+	justify-content: space-between;
+	.archive-adventures-flex-item{
+		width:48%;
+		margin: 10px;
+		position: relative;
+		img{
+			height: 600px;
+		}
+		.adventure-archive-title{
+			position: absolute;
+			top: 0;
+			left:20px;
+			a{
+			font-family: 'Merriweather Web';
+			font-weight: 400;
+			text-decoration: none;
+			font-size: 48px;
+			color: $white;
+			text-shadow: 1px 1px 2px #323232;
+			&:hover{
+				color: $background;
+			}
+			}
+		}
+		.adventure-page-read-more{
+			position: absolute;
+			bottom: 60px;
+			left: 20px;
+			a{
+			border: solid 1px $white;
+			color: $white;	
+			}		
+		}
+	}
+}
 
 
 

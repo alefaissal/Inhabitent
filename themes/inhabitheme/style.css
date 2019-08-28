@@ -1485,6 +1485,52 @@ aside a {
 .single-adventure-page .wp-block-image {
   margin-top: 0; }
 
+.archive-page-title {
+  margin: 60px auto;
+  border-bottom: dashed 1px #e6e3e3;
+  width: 1200px;
+  font-size: 1.2em; }
+
+.article-adventure-archive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 1200px;
+  margin: 60px auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .article-adventure-archive .archive-adventures-flex-item {
+    width: 48%;
+    margin: 10px;
+    position: relative; }
+    .article-adventure-archive .archive-adventures-flex-item img {
+      height: 600px; }
+    .article-adventure-archive .archive-adventures-flex-item .adventure-archive-title {
+      position: absolute;
+      top: 0;
+      left: 20px; }
+      .article-adventure-archive .archive-adventures-flex-item .adventure-archive-title a {
+        font-family: 'Merriweather Web';
+        font-weight: 400;
+        text-decoration: none;
+        font-size: 48px;
+        color: white;
+        text-shadow: 1px 1px 2px #323232; }
+        .article-adventure-archive .archive-adventures-flex-item .adventure-archive-title a:hover {
+          color: #e6e3e3; }
+    .article-adventure-archive .archive-adventures-flex-item .adventure-page-read-more {
+      position: absolute;
+      bottom: 60px;
+      left: 20px; }
+      .article-adventure-archive .archive-adventures-flex-item .adventure-page-read-more a {
+        border: solid 1px white;
+        color: white; }
+
 .search-main {
   width: 60%;
   margin: 0 auto; }

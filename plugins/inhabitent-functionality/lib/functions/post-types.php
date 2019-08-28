@@ -105,7 +105,7 @@ function inhabitent_ctp_adventures() {
 		'label'                 => __( 'Adventures', 'text_domain' ),
 		'description'           => __( 'Post Type Description', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'comments' ),
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'comments' ),
 		// 'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical' => false,
         'public' => true,
