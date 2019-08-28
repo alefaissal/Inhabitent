@@ -4,7 +4,7 @@
         url(../../images/dark-wood.png) repeat;
 
     background-size: cover;
-    color: white;
+    color: $white;
 }
 
 .footer-container {
@@ -15,7 +15,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     a{
-        color: white;
+        color: $white;
         text-decoration: none;
         &:hover{
             color: #d99054;
@@ -53,7 +53,7 @@
 
 span.footer-title {
     text-transform: uppercase;
-    color: #d99054;
+    color: $orangeHover;
     font-family: 'Novecento Sans Web';
 	font-weight: 700;
 
