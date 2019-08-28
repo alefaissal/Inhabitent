@@ -22,7 +22,7 @@ get_header(); ?>
 		<?php /* Start the Loop */ ?>
 		<?php while (have_posts()) : the_post(); ?>
 
-		<article class="article-journal" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<article class="article-journal" id="post-<?php the_ID(); ?>">
 			<header class="entry-header journal-header">
 				<?php if (has_post_thumbnail()) : ?>
 				<?php the_post_thumbnail('large'); ?>
