@@ -90,22 +90,22 @@ get_header(); ?>
 
             <div class='grid-item-canoe'>
                <h2>Getting Back to <br>The Nature in a Canoe</h2>
-               <a href="#">Ready More</a>
+               <a href="<?php echo get_home_url();?>/adventure_type/canoe-nature/">Ready More</a>
             </div>
             <div class='grid-item-night'>
                <h2>A Night with Friends at <br>the Beach</h2>
-               <a href="#">Ready More</a>
+               <a href="<?php echo get_home_url();?>/adventure_type/night-beach/">Ready More</a>
             </div>
             <div class='grid-item-mountain'>
-               <h2>Taking in the <br>View at Big<br> Mountai</h2>
-               <a href="#">Ready More</a>
+               <h2>Taking in the <br>View at Big<br> Mountain</h2>
+               <a href="<?php echo get_home_url();?>/adventure_type/big-mountain/">Ready More</a>
             </div>
             <div class='grid-item-star'>
                <h2>Star-Gazing at <br>night Sky</h2>
-               <a href="#">Ready More</a>
+               <a href="<?php echo get_home_url();?>/adventure_type/night-sky/">Ready More</a>
             </div>
             <div class='front-page-more-adventure'>
-            <a href="#">More adventures</a>
+            <a href="<?php echo get_home_url();?>/adventures">More adventures</a>
             </div>
 
          </div>

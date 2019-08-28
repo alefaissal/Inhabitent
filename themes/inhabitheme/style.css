@@ -726,7 +726,8 @@ a {
   border: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  text-shadow: 1px 1px 2px #323232; }
   .nav-header-flexbox .header-logo-img {
     height: 50px;
     width: 50px;
@@ -757,7 +758,7 @@ a {
         font-family: 'Novecento Sans Web';
         font-weight: 400;
         color: white;
-        text-decoration: none;
+        text-shadow: none;
         padding: 1rem; }
         .nav-header-flexbox ul li a:hover {
           color: #d99054; }
@@ -770,7 +771,8 @@ a {
 
 .no-large-image .nav-header-flexbox {
   position: relative;
-  width: 90%; }
+  width: 90%;
+  text-shadow: 1px 1px 2px #323232; }
   .no-large-image .nav-header-flexbox .header-logo-img {
     background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
     background-size: contain;
@@ -778,11 +780,13 @@ a {
     border: none; }
   .no-large-image .nav-header-flexbox ul {
     padding: 0; }
-    .no-large-image .nav-header-flexbox ul li a {
-      color: #248A83;
-      text-decoration: none; }
-      .no-large-image .nav-header-flexbox ul li a:hover {
-        color: black; }
+    .no-large-image .nav-header-flexbox ul li {
+      text-shadow: none; }
+      .no-large-image .nav-header-flexbox ul li a {
+        color: #248A83;
+        text-decoration: none; }
+        .no-large-image .nav-header-flexbox ul li a:hover {
+          color: black; }
 
 .no-large-image ::-webkit-input-placeholder {
   color: #248A83;
