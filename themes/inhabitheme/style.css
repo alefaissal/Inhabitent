@@ -1470,6 +1470,12 @@ aside a {
 .widget-area {
   margin: 0 50px; }
 
+.single-adventure-page h1 {
+  display: none; }
+
+.single-adventure-page .wp-block-image {
+  margin-top: 0; }
+
 .search-main {
   width: 60%;
   margin: 0 auto; }

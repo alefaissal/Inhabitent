@@ -1082,7 +1082,14 @@ aside {
 }
 
 //Single - Journal page
-
+.single-adventure-page{
+	h1{
+		display: none;
+	}
+	.wp-block-image{
+		margin-top: 0;
+	}
+}
 
 
 
