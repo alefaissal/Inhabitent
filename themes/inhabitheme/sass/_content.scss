@@ -963,9 +963,11 @@ form {
     border-radius: 0;
 	font-size: 1em;
 	cursor: pointer;
+
     i {
       margin-right: 5px;
-    }
+	}
+	
     &:hover {
       box-shadow: none;
       background: $darkGreen;
