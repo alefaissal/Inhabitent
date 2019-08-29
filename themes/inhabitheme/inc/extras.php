@@ -73,12 +73,11 @@ add_filter('login_headerurl', 'my_custom_login_url');
 add_filter( 'body_class', 'addBodyClass' );
 
 function addBodyClass( $classes ) {
-    
-// d( is_page_template('page-about.php') );
-// d( is_page( 'About' ) );
 
   if( is_front_page() || is_page( 'About' ) || is_singular( 'adventure_type' ) ) {
-    // $classes[] = 'large-image';
+    $classes[] = 'large-image';
+  }elseif(is_front_page()){
+    $classes[] = 'front-page-scroll';
   }else{
     $classes[] = 'no-large-image'; 
   }
@@ -103,6 +102,8 @@ add_filter( 'get_the_archive_title', function ( $title ) {
 
 });
 
+
+
 add_filter( 'the_archive_title', function ( $title ) {
 
     if( is_tag() ) {
@@ -114,3 +115,15 @@ add_filter( 'the_archive_title', function ( $title ) {
     return $title;
 
 });
+
+// window.onscroll = function() {scrollFunction()};
+// function scrollFunction() {
+//     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+//      $("#header").addClass = "30px";
+//     } else {
+//       document.getElementById("header").style.fontSize = "90px";
+//     }
+//   }
+
+  
+//   add_filter( 'body_class', 'addBodyClass' );

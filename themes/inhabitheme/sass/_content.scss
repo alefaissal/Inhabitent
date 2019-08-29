@@ -6,1229 +6,1276 @@
 
 //404
 .four-content-area {
-	max-width: 80%;
-	margin: 0 auto;
+  max-width: 80%;
+  margin: 0 auto;
 
-	ul {
-		margin-left: 0;
-		padding: 10px;
+  ul {
+    margin-left: 0;
+    padding: 10px;
 
-		li {
-			list-style-type: none;
+    li {
+      list-style-type: none;
 
-			a {
-				text-decoration: none;
-				color: $darkGreen;
-			}
-		}
-	}
+      a {
+        text-decoration: none;
+        color: $darkGreen;
+      }
+    }
+  }
 
-	.search-text-four {
-		p {
-			color: $darkGreen;
-		}
-	}
+  .search-text-four {
+    p {
+      color: $darkGreen;
+    }
+  }
 }
 
 .nothing-found-four {
-	font-size: 1.5em;
-	font-weight: bold;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .page-img-four-tent h1 {
-	height: 80vh;
-	width: 80vw;
-	margin: 0 auto;
-	background: url(../../images/tent-falling.gif) no-repeat;
-	background-size: contain;
-	color: rgb(175, 115, 5);
-	text-align: left;
-	padding: 30px;
-	display: flex;
-	flex-flow: row;
-	align-items: flex-end;
+  height: 80vh;
+  width: 80vw;
+  margin: 0 auto;
+  background: url(../../images/tent-falling.gif) no-repeat;
+  background-size: contain;
+  color: rgb(175, 115, 5);
+  text-align: left;
+  padding: 30px;
+  display: flex;
+  flex-flow: row;
+  align-items: flex-end;
 }
 
 //Header for all pages
 .icon-search {
-	color: $white;
-	cursor: pointer;
-	margin-right: 20px;
+  color: $white;
+  cursor: pointer;
+  margin-right: 20px;
 }
 
 .header-search-bar {
-	max-width: 200px;
+  max-width: 200px;
 
-	label {
-		color: $white;
-	}
+  label {
+    color: $white;
+  }
 
-	fieldset {
-		width: 400px;
-		text-align: center;
-		border: none;
-		padding: 17px;
-		position: relative;
-	}
+  fieldset {
+    width: 400px;
+    text-align: center;
+    border: none;
+    padding: 17px;
+    position: relative;
+  }
 
-	input {
-		width: 0;
-		opacity: 0;
-		transition: all 1s;
+  input {
+    width: 0;
+    opacity: 0;
+    transition: all 1s;
 
-		&:focus {
-			color: $white;
-		}
-	}
+    &:focus {
+      color: $white;
+    }
+  }
 }
 
 ::placeholder {
-	color: $white;
-	text-transform: uppercase;
+  color: $white;
+  text-transform: uppercase;
 }
 
 .main-navigation {
-	display: flex;
+  display: flex;
 }
 
 .search-form {
-	display: flex;
+  display: flex;
 }
 
 .search-on label {
-	input {
-		width: 200px;
-		opacity: 1;
-		font-size: 15px;
-		color: $white;
-		background: transparent;
-	}
+  input {
+    width: 200px;
+    opacity: 1;
+    font-size: 15px;
+    color: $white;
+    background: transparent;
+  }
 }
 
 .nav-header-flexbox {
-	display: flex;
-	position: absolute;
-	justify-content: flex-start;
-	width: 90%;
-	z-index: 200;
-	margin: 0 auto;
-	border: none;
-	align-items: center;
-	.header-logo-img {
-		height: 50px;
-		width: 50px;
-		margin-left: 40px;
-		background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
-		background-size: contain;
-		margin-top: 10px;
-		border: none;
-	}
+  display: flex;
+  position: absolute;
+  justify-content: flex-start;
+  width: 90%;
+  z-index: 200;
+  margin: 0 auto;
+  border: none;
+  align-items: center;
+  .header-logo-img {
+    height: 50px;
+    width: 50px;
+    margin-left: 40px;
+    background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
+    background-size: contain;
+    margin-top: 10px;
+    border: none;
+  }
 
-	.menu-menu-1-container {
-		width: 100%;
-	}
+  .menu-menu-1-container {
+    width: 100%;
+  }
+  .icon-search i{
+    color: $white;
+  }
+  .header-search-bar {
+    input {
+      color: $white;
 
-	ul {
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-		padding: 20px;
-		text-transform: uppercase;
-		width: 100%;
-		font-weight: bold;
-		li {
-			color: $white;
-			
-			// text-shadow: 1px 1px 2px #323232;
-			a {
-				font-family: 'Novecento Sans Web';
-				font-weight: 400;
-				color: $white;
-				padding: 1rem;
-				text-shadow: 1px 1px 2px #323232;
-				
+      &:focus {
+        color: $white;
+      }
+    }
+  }
+  ::placeholder {
+    color: $white;
+    text-transform: uppercase;
+  }
 
-				&:hover {
-					color: $orangeHover;
-				}
-			}
-		}
-	}
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: bold;
+    li {
+      color: $white;
+      a {
+        font-family: 'Novecento Sans Web';
+        font-weight: 400;
+        color: $white;
+        padding: 1rem;
+        text-shadow: 1px 1px 2px #323232;
+        &:hover {
+          color: $orangeHover;
+        }
+      }
+    }
+  }
 }
 
 .no-large-image {
-	
-	.nav-back-color {
-		border-bottom: solid 1px $black;
-		margin-bottom: 10px;
-		width: 100%;
-		background: $background;
-	}
+  .nav-back-color {
+    border-bottom: solid 1px $black;
+    margin-bottom: 10px;
+    width: 100%;
+    background: $background;
+  }
 
-	.nav-header-flexbox {
-		position: relative;
-		width: 90%;
-		.header-logo-img {
-			background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
-			background-size: contain;
-			margin-top: 10px;
-			border: none;
-		}
+  .nav-header-flexbox {
+    position: relative;
+    width: 90%;
+    .header-logo-img {
+      background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+      background-size: contain;
+      margin-top: 10px;
+      border: none;
+    }
 
-		ul {
-			padding: 0;
-			li {
-				text-shadow: none;
-				a {
-					color: $darkGreen;
-					text-decoration: none;
-					text-shadow: none;
+    ul {
+      padding: 0;
+      li {
+        text-shadow: none;
+        a {
+          color: $darkGreen;
+          text-decoration: none;
+          text-shadow: none;
 
-					&:hover {
-						color: $black;
-					}
-				}
-			}
-		}
-	}
+          &:hover {
+            color: $black;
+          }
+        }
+      }
+    }
+  }
 
-	::placeholder {
-		color: $darkGreen;
-		text-transform: uppercase;
-	}
+  ::placeholder {
+    color: $darkGreen;
+    text-transform: uppercase;
+  }
 
-	.icon-search {
-		color: $darkGreen;
-	}
+  .icon-search {
+    color: $darkGreen;
+  }
 
-	.header-search-bar {
-		input {
-			color: $darkGreen;
+  .header-search-bar {
+    input {
+      color: $darkGreen;
 
-			&:focus {
-				color: $darkGreen;
-			}
-
-		}
-	}
+      &:focus {
+        color: $darkGreen;
+      }
+    }
+  }
 }
 
+.nav-header-flexbox.scroll-nav-header {
+    position: fixed;
+	width: 90%;
+    .header-logo-img {
+      background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+      background-size: contain;
+      margin-top: 10px;
+      border: none;
+    }
+    ul {
+      padding: 0;
+      li {
+        text-shadow: none;
+        a {
+          color: $darkGreen;
+          text-decoration: none;
+		  text-shadow: none;
+		  font-weight: 700;
+
+          &:hover {
+            color: $black;
+          }
+        }
+      }
+    }
+
+
+  ::placeholder {
+    color: $darkGreen;
+    text-transform: uppercase;
+  }
+
+  .icon-search i{
+    color: $darkGreen;
+  }
+
+  .header-search-bar {
+    input {
+      color: $darkGreen;
+
+      &:focus {
+        color: $darkGreen;
+      }
+    }
+  }
+}
 
 //Front page
 .main-img-logo {
+  margin: 0;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url(../../images/home-hero.jpg);
+  background-size: cover, cover;
+  height: 100vh;
+  width: 100%;
 
-	margin: 0;
-	background:
-		linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
-		url(../../images/home-hero.jpg);
-	background-size: cover, cover;
-	height: 100vh;
-	width: 100%;
-
-	img {
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
-	}
+  img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
-//front page products 
+//front page products
 .product-info {
-	max-width: 1200px;
-	margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 
-	h2 {
-		font-family: 'Novecento Sans Web';
-		text-align: center;
-		font-size: 40px;
-		text-transform: uppercase;
-		font-weight: normal;
-		font-style: normal;
-	}
+  h2 {
+    font-family: 'Novecento Sans Web';
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-style: normal;
+  }
 }
 
 .front-page-flex-box {
-	display: flex;
-	width: 100%;
-	justify-content: space-around;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .front-page-product-item {
-	width: 25%;
-	display: flex;
-	flex-flow: column;
-	align-content: center;
-	padding: 30px 10px;
-	border: 1px solid #e1e1e1;
-	border-top-width: 5px;
-	margin: 0 20px;
+  width: 25%;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  padding: 30px 10px;
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px;
+  margin: 0 20px;
 
-	&:hover {
-		border-color: $orangeHover;
-	}
+  &:hover {
+    border-color: $orangeHover;
+  }
 
-	img {
-		width: 35%;
-		margin: 0 auto;
-	}
+  img {
+    width: 35%;
+    margin: 0 auto;
+  }
 
-	p {
-		margin: 0 auto;
-		text-align: center;
-		padding: 10px;
-	}
+  p {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+  }
 
-	a {
-		margin: 0 auto;
-		padding: 10px;
-		text-decoration: none;
-		text-transform: uppercase;
-		background: $darkGreen;
-		color: $white;
-	}
+  a {
+    margin: 0 auto;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: $darkGreen;
+    color: $white;
+  }
 }
 
 //Front-page Journal
 .journal-info-container {
-	max-width: 1200px;
-	margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 
-	h2 {
-		font-family: Novecento Sans Web;
-		text-align: center;
-		font-size: 40px;
-		text-transform: uppercase;
-		font-weight: 400;
-		font-style: normal;
-	}
+  h2 {
+    font-family: Novecento Sans Web;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: normal;
+  }
 }
 
 .front-page-journal-container {
-	display: flex;
+  display: flex;
 }
 
 .front-page-post-container {
-	width: 30%;
-	margin: 15px;
-
+  width: 30%;
+  margin: 15px;
 }
 
 .front-page-post-meta-container {
-	display: flex;
-	font-size: 0.8em;
-	margin-top: 10px;
+  display: flex;
+  font-size: 0.8em;
+  margin-top: 10px;
 }
 
 .front-page-journal-thumbnail {
-	height: 245px;
-	width: 370px;
+  height: 245px;
+  width: 370px;
 
-	img {
-		width: 100%;
-		height: 100%;
-	}
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .front-page-post-title {
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $darkGreen;
+    font-size: 1.4em;
+    font-weight: bold;
 
-	a {
-		text-transform: uppercase;
-		text-decoration: none;
-		color: $darkGreen;
-		font-size: 1.4em;
-		font-weight: bold;
-
-		&:hover {
-			color: $black;
-		}
-	}
+    &:hover {
+      color: $black;
+    }
+  }
 }
 
 .front-page-post-permalink {
-	padding: 20px;
-	position: relative;
-	margin: 10px;
+  padding: 20px;
+  position: relative;
+  margin: 10px;
 
-	a {
-		position: absolute;
-		transform: translate(-25px, -20px);
-		padding: 10px;
-		text-transform: uppercase;
-		text-decoration: none;
-		border: 1px solid $black;
-		color: $black;
+  a {
+    position: absolute;
+    transform: translate(-25px, -20px);
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid $black;
+    color: $black;
 
-		&:hover {
-			background: $darkGreen;
-			color: $white;
-		}
-	}
+    &:hover {
+      background: $darkGreen;
+      color: $white;
+    }
+  }
 }
-
 
 //Front page more adventures
 .more-adventures {
-	position: relative;
-	font-family: 'Merriweather Web';
+  position: relative;
+  font-family: 'Merriweather Web';
 
-	h1 {
-		max-width: 1200px;
-		margin: 60px auto;
-		font-family: 'Merriweather Web';
-		text-align: center;
-		font-size: 40px;
-		text-transform: uppercase;
-		font-weight: 400;
-		font-style: normal;
-	}
+  h1 {
+    max-width: 1200px;
+    margin: 60px auto;
+    font-family: 'Merriweather Web';
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: normal;
+  }
 
-	h2 {
-		color: $white;
-		font-size: 2.2em;
-		margin-left: 20px;
-		font-family: 'Merriweather Web';
-		font-weight: 400;
-	}
+  h2 {
+    color: $white;
+    font-size: 2.2em;
+    margin-left: 20px;
+    font-family: 'Merriweather Web';
+    font-weight: 400;
+  }
 
-	a {
-		text-decoration: none;
-		color: $white;
-		text-transform: uppercase;
-		padding: 20px;
-		border: solid 1px $white;
-		position: absolute;
-		margin-left: 20px;
-		font-weight: bold;
-		font-family: 'Novecento Sans Web';
-		font-weight: 400;
+  a {
+    text-decoration: none;
+    color: $white;
+    text-transform: uppercase;
+    padding: 20px;
+    border: solid 1px $white;
+    position: absolute;
+    margin-left: 20px;
+    font-weight: bold;
+    font-family: 'Novecento Sans Web';
+    font-weight: 400;
 
-		&:hover {
-			color: $orangeHover;
-		}
-	}
+    &:hover {
+      color: $orangeHover;
+    }
+  }
 
-	.front-page-more-adventure {
-		a {
-			position: absolute;
-			background: $darkGreen;
-			margin: 20px 0;
+  .front-page-more-adventure {
+    a {
+      position: absolute;
+      background: $darkGreen;
+      margin: 20px 0;
 
-			&:hover {
-				color: $black;
-				background: $white;
-				border: 1px solid $black;
-			}
-		}
-	}
+      &:hover {
+        color: $black;
+        background: $white;
+        border: 1px solid $black;
+      }
+    }
+  }
 }
 
 .grid-container-front-page {
-	max-width: 1200px;
-	margin: 0 auto;
-	display: grid;
-	grid-column: 50% 25% 25%;
-	grid-row: 50% 50%;
-	grid-gap: 10px;
-	height: 700px;
-	a:hover{
-		background: $darkGreen;
-		color: $white;
-	}
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-column: 50% 25% 25%;
+  grid-row: 50% 50%;
+  grid-gap: 10px;
+  height: 700px;
+  a:hover {
+    background: $darkGreen;
+    color: $white;
+  }
 }
 
 .grid-item-canoe {
-	grid-column: 1/2;
-	grid-row: 1/3;
-	background:
-		linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
-		url(../../images/adventure-photos/canoe-girl.jpg);
-	background-size: cover, cover;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url(../../images/adventure-photos/canoe-girl.jpg);
+  background-size: cover, cover;
 
-	a {
-		top: 300px;
-	}
+  a {
+    top: 300px;
+  }
 }
 
 .grid-item-night {
-	grid-column: 2/4;
-	grid-row: 1/2;
-	background:
-		linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
-		url(../../images/adventure-photos/night-sky.jpg);
-	background-size: cover, cover;
+  grid-column: 2/4;
+  grid-row: 1/2;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url(../../images/adventure-photos/night-sky.jpg);
+  background-size: cover, cover;
 }
 
 .grid-item-mountain {
-	grid-column: 2/3;
-	grid-row: 2/3;
-	background:
-		linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
-		url(../../images/adventure-photos/mountain-hikers.jpg);
-	background-size: cover, cover;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url(../../images/adventure-photos/mountain-hikers.jpg);
+  background-size: cover, cover;
 }
 
 .grid-item-star {
-	grid-column: 3/4;
-	grid-row: 2/3;
-	background:
-		linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
-		url(../../images/adventure-photos/beach-bonfire.jpg);
-	background-size: cover, cover;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url(../../images/adventure-photos/beach-bonfire.jpg);
+  background-size: cover, cover;
 
-	a {
-		top: 610px;
-	}
+  a {
+    top: 610px;
+  }
 }
 
 //archive single category
 .archive-page-main {
-	max-width: 740px;
-	margin: 30px auto;
+  max-width: 740px;
+  margin: 30px auto;
 }
 
 div.archive-page-title {
-	div.archive-single-category-description {
-		font-weight: 100;
-	}
+  div.archive-single-category-description {
+    font-weight: 100;
+  }
 
-	.month-title {
-		//for the title of month page
-		text-align: left;
-		max-width: 740px;
-		margin: 30px auto;
-		padding: 20px;
-		font-size: 1.8em;
-	}
+  .month-title {
+    //for the title of month page
+    text-align: left;
+    max-width: 740px;
+    margin: 30px auto;
+    padding: 20px;
+    font-size: 1.8em;
+  }
 }
-
 
 //archive product page
 .archive-page-main {
-	max-width: 1200px;
-	margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .archive-page-title {
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: bold;
-	letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2em;
 }
 
 .archive-page-nav {
-	ul {
-		max-width: 50%;
-		display: flex;
-		justify-content: space-around;
-		list-style-type: none;
-		margin: 30px auto;
+  ul {
+    max-width: 50%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 30px auto;
 
-		li {
-			a {
-				font-size: 1.2em;
-				text-transform: uppercase;
-				color: $darkGreen;
-				font-family: 'Novecento Sans Web';
-				font-weight: 400;
-				text-decoration: none;
-			}
-
-		}
-	}
+    li {
+      a {
+        font-size: 1.2em;
+        text-transform: uppercase;
+        color: $darkGreen;
+        font-family: 'Novecento Sans Web';
+        font-weight: 400;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 .archive-product-grid {
-	display: grid;
-	grid-template-columns: repeat(4, 25%);
-	grid-auto-rows: 1fr;
-	grid-gap: 1rem;
-	padding: 30px;
-
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-auto-rows: 1fr;
+  grid-gap: 1rem;
+  padding: 30px;
 }
 
-
 .archive-product-grid-item {
-	img {
-		widows: 100%;
-		max-height: 180px;
-
-	}
+  img {
+    widows: 100%;
+    max-height: 180px;
+  }
 }
 
 .grid-item-text {
-	height: 4em;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	border: 1px solid #e1e1e1;
-	border-top-width: 5px;
-	padding: 0 10px;
+  height: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px;
+  padding: 0 10px;
 
-	p {
-		white-space: nowrap;
-		margin: 0;
-	}
+  p {
+    white-space: nowrap;
+    margin: 0;
+  }
 
-	.dots {
-		flex-grow: 1;
-		overflow: hidden;
+  .dots {
+    flex-grow: 1;
+    overflow: hidden;
 
-		&::after {
-			content: '.............................................';
-		}
-	}
+    &::after {
+      content: '.............................................';
+    }
+  }
 }
 
 // Single product page
 .single-product-container {
-	max-width: 60%;
-	margin: 0 auto;
+  max-width: 60%;
+  margin: 0 auto;
 
-	article {
-		width: 100%;
-	}
+  article {
+    width: 100%;
+  }
 }
 
 .single-product-flexbox {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
 
+  .single-product-thumbnail {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    align-self: flex-start;
+  }
 
-	.single-product-thumbnail {
-		width: 50%;
-		padding: 10px;
-		display: flex;
-		align-self: flex-start;
-	}
+  .single-product-text {
+    width: 50%;
+    padding: 10px;
+    padding-top: 0;
 
-	.single-product-text {
-		width: 50%;
-		padding: 10px;
-		padding-top: 0;
+    .entry-title {
+      color: $orangeHover;
+      text-transform: uppercase;
+      margin-top: 0;
+      padding-top: 0;
+    }
 
-		.entry-title {
-			color: $orangeHover;
-			text-transform: uppercase;
-			margin-top: 0;
-			padding-top: 0;
-		}
+    .single-product-price {
+      font-size: 1.8em;
+      font-family: Novecento Sans Web;
+    }
 
-		.single-product-price {
-			font-size: 1.8em;
-			font-family: Novecento Sans Web;
-		}
-
-		.entry-content {
-			text-align: justify;
-		}
-	}
+    .entry-content {
+      text-align: justify;
+    }
+  }
 }
-
 
 //Adventure Page
 .adventure-page-header {
-	display: none;
+  display: none;
 
-	h1 {
-		display: none;
-	}
+  h1 {
+    display: none;
+  }
 }
 
-
 .single-adventure-page {
-	img {
-		width: 100%;
-		height: 100vh;
-	}
+  img {
+    width: 100%;
+    height: 100vh;
+  }
 
-	h2 {
-		text-transform: uppercase;
-		text-align: center;
-		font-size: 2em;
-	}
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+  }
 
-	p {
-		width: 740px;
-		margin: 0 auto;
-		line-height: 30px;
-		text-align: justify;
-		padding: 20px;
-	}
+  p {
+    width: 740px;
+    margin: 0 auto;
+    line-height: 30px;
+    text-align: justify;
+    padding: 20px;
+  }
 }
 
 // About page
 .hero-image-header {
-	height: 100vh;
-	width: 100%;
-	color: $white;
-	font-size: 1.2em;
-	text-transform: uppercase;
+  height: 100vh;
+  width: 100%;
+  color: $white;
+  font-size: 1.2em;
+  text-transform: uppercase;
 }
 
 .about-content {
-	h3 {
-		text-align: center;
-		max-width: 740px;
-		margin: 20px auto;
-		font-size: 2em;
-		text-transform: uppercase;
-	}
+  h3 {
+    text-align: center;
+    max-width: 740px;
+    margin: 20px auto;
+    font-size: 2em;
+    text-transform: uppercase;
+  }
 
-	p {
-		text-align: justify;
-		max-width: 740px;
-		margin: 20px auto;
-	}
-	:last-child{
-		margin-bottom: 100px;
-	}
-	:nth-child(2) {
-		margin-top: 80px;
-	}
-	:nth-child(5){
-		margin-top: 50px;
-	}
+  p {
+    text-align: justify;
+    max-width: 740px;
+    margin: 20px auto;
+  }
+  :last-child {
+    margin-bottom: 100px;
+  }
+  :nth-child(2) {
+    margin-top: 80px;
+  }
+  :nth-child(5) {
+    margin-top: 50px;
+  }
 }
 
 .about-title {
-	display: none;
+  display: none;
 }
 
-
-// Post page 
+// Post page
 .article-journal {
-	margin: 30px auto;
-	max-width: 740px;
+  margin: 30px auto;
+  max-width: 740px;
 }
 
 body article header.journal-header {
-	position: relative;
-	max-width: 640px;
+  position: relative;
+  max-width: 640px;
 
-	img {
-		object-fit: fill;
-
-	}
+  img {
+    object-fit: fill;
+  }
 }
 
 .journal-title a {
-	background: $darkGreen;
-	position: absolute;
-	top: 40px;
-	left: 0;
-	color: $white;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 34px;
-	width: 450px;
-	padding: 5px 20px;
+  background: $darkGreen;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 34px;
+  width: 450px;
+  padding: 5px 20px;
 }
 
 .journal-meta {
-	position: absolute;
-	background: $darkGreen;
-	bottom: 7px;
-	right: 0;
-	color: $white;
-	padding: 2px 30px;
-	margin: 0;
-	text-transform: uppercase;
-	font-family: 'Novecento Sans Web';
-	font-weight: 400;
+  position: absolute;
+  background: $darkGreen;
+  bottom: 7px;
+  right: 0;
+  color: $white;
+  padding: 2px 30px;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'Novecento Sans Web';
+  font-weight: 400;
 }
 
 .journal-content {
-	max-width: 640px;
-	text-align: justify;
+  max-width: 640px;
+  text-align: justify;
 }
 
 .journal-page-read-more {
-	a {
-		padding: 10px;
-		text-transform: uppercase;
-		text-decoration: none;
-		border: 1px solid $black;
-		color: $black;
+  a {
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid $black;
+    color: $black;
 
-		&:hover {
-			background: $darkGreen;
-			color: $white;
-		}
-	}
+    &:hover {
+      background: $darkGreen;
+      color: $white;
+    }
+  }
 }
 
 //Single page Journal
 body article header.single-journal-header {
-	position: relative;
-	max-width: 740px;
+  position: relative;
+  max-width: 740px;
 
-	img {
-		object-fit: fill;
-		width: 100%;
-	}
+  img {
+    object-fit: fill;
+    width: 100%;
+  }
 }
 
 .single-journal-title {
-	background: $darkGreen;
-	position: absolute;
-	top: 40px;
-	left: 0;
-	color: $white;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 1em;
-	width: 450px;
-	padding: 5px 20px;
+  background: $darkGreen;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  width: 450px;
+  padding: 5px 20px;
 }
 
 .single-journal-meta {
-	position: absolute;
-	background: $darkGreen;
-	bottom: 7px;
-	right: 0;
-	color: $white;
-	padding: 2px 30px;
-	margin: 0;
+  position: absolute;
+  background: $darkGreen;
+  bottom: 7px;
+  right: 0;
+  color: $white;
+  padding: 2px 30px;
+  margin: 0;
 
-	a {
-		color: $white;
-		text-decoration: none;
+  a {
+    color: $white;
+    text-decoration: none;
 
-		&:hover {
-			color: $black;
-		}
-	}
+    &:hover {
+      color: $black;
+    }
+  }
 }
 
 .single-journal-para {
-	max-width: 740px;
+  max-width: 740px;
 
-	p {
-		text-align: justify;
-	}
+  p {
+    text-align: justify;
+  }
 }
 
 .single-journal-container {
-	max-width: 80%;
-	margin: 0 auto;
+  max-width: 80%;
+  margin: 0 auto;
 
-	article {
-		max-width: 740px;
-		margin: 0 auto;
-	}
+  article {
+    max-width: 740px;
+    margin: 0 auto;
+  }
 }
 
 .entry-footer {
-	display: flex;
-	justify-content: space-around;
-	text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
 
-	a {
-		text-decoration: none;
-		color: $darkGreen;
+  a {
+    text-decoration: none;
+    color: $darkGreen;
 
-		&:hover {
-			color: $black
-		}
-	}
-
+    &:hover {
+      color: $black;
+    }
+  }
 }
 
 .single-journal-comments-container {
-	max-width: 740px;
-	margin: 0 auto;
+  max-width: 740px;
+  margin: 0 auto;
 }
 
 .comment-respond {
-	h3 {
-		text-transform: uppercase;
-		letter-spacing: 0.2em;
-		font-size: 1.7em;
-	}
+  h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 1.7em;
+  }
 }
 
 form {
-	font-family: Novecento Sans Web;
-	text-transform: uppercase;
+  font-family: Novecento Sans Web;
+  text-transform: uppercase;
 
-	.logged-in-as {
-		display: none;
-	}
+  .logged-in-as {
+    display: none;
+  }
 
-	.form-submit input {
-		text-transform: uppercase;
-		background: $darkGreen;
-		color: $white;
-		font-family: Novecento Sans Web;
-		box-shadow: none;
+  .form-submit input {
+    text-transform: uppercase;
+    background: $darkGreen;
+    color: $white;
+    font-family: Novecento Sans Web;
+    box-shadow: none;
 
-		&:hover {
-			box-shadow: none;
-			color: $orangeHover;
-		}
-	}
+    &:hover {
+      box-shadow: none;
+      color: $orangeHover;
+    }
+  }
 
-	textarea {
-		background: $formTextArea;
-	}
+  textarea {
+    background: $formTextArea;
+  }
 }
 
 .entry-footer {
-	max-width: 740px;
-	margin: 0 auto;
+  max-width: 740px;
+  margin: 0 auto;
 }
 
 .single-journal-comments-container {
-	max-width: 740px;
-	margin: 0 auto;
+  max-width: 740px;
+  margin: 0 auto;
 }
 
-.contact-box{
-	p i{
-		margin-right: 5px;
-	}
+.contact-box {
+  p i {
+    margin-right: 5px;
+  }
 }
 .social-buttons {
-	button {
-		text-transform: uppercase;
-		color: $black;
-		font-family: Novecento Sans Web;
-		box-shadow: none;
-		background: $white;
-		width: 120px;
-		height: 40px;
-		border: $black solid 1px;
-		border-radius: 0;
-		font-size: 1em;
-		i{
-			margin-right: 5px;
-		}
-		&:hover {
-			box-shadow: none;
-			background: $darkGreen;
-			color: $white;
-		}
-	}
+  button {
+    text-transform: uppercase;
+    color: $black;
+    font-family: Novecento Sans Web;
+    box-shadow: none;
+    background: $white;
+    width: 120px;
+    height: 40px;
+    border: $black solid 1px;
+    border-radius: 0;
+    font-size: 1em;
+    i {
+      margin-right: 5px;
+    }
+    &:hover {
+      box-shadow: none;
+      background: $darkGreen;
+      color: $white;
+    }
+  }
 }
-
 
 //single journal comment space
 .fn {
-	text-transform: capitalize;
-	font-weight: bold;
-	background: none;
+  text-transform: capitalize;
+  font-weight: bold;
+  background: none;
 }
 
 .comment-reply-link {
-	text-decoration: none;
-	color: $darkGreen;
+  text-decoration: none;
+  color: $darkGreen;
 }
 
 .comment-metadata {
-	a {
-		text-decoration: none;
-		color: $darkGreen;
-	}
+  a {
+    text-decoration: none;
+    color: $darkGreen;
+  }
 }
 
 .form-submit input {
-	text-transform: uppercase;
-	background: $darkGreen;
-	color: $white;
-	font-family: Novecento Sans Web;
-	box-shadow: none;
+  text-transform: uppercase;
+  background: $darkGreen;
+  color: $white;
+  font-family: Novecento Sans Web;
+  box-shadow: none;
 
-	&:hover {
-		box-shadow: none;
-		color: $orangeHover;
-	}
+  &:hover {
+    box-shadow: none;
+    color: $orangeHover;
+  }
 }
 
 #author,
 #email,
 #url {
-	background: $formTextArea;
+  background: $formTextArea;
 }
 
 .comment-form-author {
-	margin-right: 1%;
-	margin-bottom: 1.5rem;
-	width: 49%;
-	float: left;
+  margin-right: 1%;
+  margin-bottom: 1.5rem;
+  width: 49%;
+  float: left;
 
-	input {
-		width: 100%;
-		padding: 7px;
-	}
+  input {
+    width: 100%;
+    padding: 7px;
+  }
 }
 
 .comment-form-email {
-	margin-left: 1%;
-	margin-bottom: 1.5rem;
-	width: 49%;
-	float: left;
+  margin-left: 1%;
+  margin-bottom: 1.5rem;
+  width: 49%;
+  float: left;
 
-	input {
-		width: 100%;
-		padding: 7px;
-	}
+  input {
+    width: 100%;
+    padding: 7px;
+  }
 }
 
 .comment-form-url {
-	clear: left;
-	width: 100%;
-	margin-bottom: 1.5rem;
+  clear: left;
+  width: 100%;
+  margin-bottom: 1.5rem;
 
-	input {
-		width: 100%;
-		padding: 7px;
-	}
+  input {
+    width: 100%;
+    padding: 7px;
+  }
 }
 
 .comment-form-cookies-consent {
-	display: none;
+  display: none;
 }
-
-
 
 //Find us page
 .site-content {
-	display: flex;
-	width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .content-area {
-	flex-grow: 1;
+  flex-grow: 1;
 }
 
 .find-us-main {
-	text-transform: uppercase;
-	max-width: 740px;
-	margin: 0 auto;
+  text-transform: uppercase;
+  max-width: 740px;
+  margin: 0 auto;
 
-	h4 {
-		font-size: 2em;
-	}
+  h4 {
+    font-size: 2em;
+  }
 
-	p {
-		text-align: justify;
-		text-transform: capitalize;
+  p {
+    text-align: justify;
+    text-transform: capitalize;
 
-		input {
-			text-transform: uppercase;
-			background: $darkGreen;
-			color: $white;
-			box-shadow: none;
-			font-family: 'Novecento Sans Web';
-			font-weight: 400;
+    input {
+      text-transform: uppercase;
+      background: $darkGreen;
+      color: $white;
+      box-shadow: none;
+      font-family: 'Novecento Sans Web';
+      font-weight: 400;
 
-			&:hover {
-				box-shadow: none;
-				color: $orangeHover;
-			}
-		}
+      &:hover {
+        box-shadow: none;
+        color: $orangeHover;
+      }
+    }
 
-		label {
-			text-transform: uppercase;
+    label {
+      text-transform: uppercase;
 
-			input {
-				background: $formTextArea;
-			}
-		}
-	}
+      input {
+        background: $formTextArea;
+      }
+    }
+  }
 
-	textarea {
-		background: $formTextArea;
-	}
+  textarea {
+    background: $formTextArea;
+  }
 }
 
 .find-us-header {
-	font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 // Sidebar
 span.day-of-week {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 aside {
-	ul {
-		margin: 0;
-		padding: 0;
-	}
+  ul {
+    margin: 0;
+    padding: 0;
+  }
 
-	li {
-		display: block;
-		list-style-type: none;
-		text-align: left;
-	}
+  li {
+    display: block;
+    list-style-type: none;
+    text-align: left;
+  }
 
-	a {
-		text-decoration: none;
-		color: $darkGreen;
-	}
+  a {
+    text-decoration: none;
+    color: $darkGreen;
+  }
 }
 
 .contact-box-sidebar {
-	a {
-		color: $black;
+  a {
+    color: $black;
 
-		&:hover {
-			color: $orangeHover;
-		}
-	}
+    &:hover {
+      color: $orangeHover;
+    }
+  }
 }
 
 .widget-area {
-	margin: 0 50px;
+  margin: 0 50px;
 }
 
 //Single - Journal page
-.single-adventure-page{
-	h1{
-		display: none;
-	}
-	.wp-block-image{
-		margin-top: 0;
-	}
+.single-adventure-page {
+  h1 {
+    display: none;
+  }
+  .wp-block-image {
+    margin-top: 0;
+  }
 }
-
 
 //archive adventures page
-.archive-page-title{
-	margin: 60px auto;
-	border-bottom: dashed 1px $background;
-	width: 1200px;
-	font-size: 1.2em;
+.archive-page-title {
+  margin: 60px auto;
+  border-bottom: dashed 1px $background;
+  width: 1200px;
+  font-size: 1.2em;
 }
-.article-adventure-archive{
-	display: flex;
-	flex-flow: row wrap;
-	width: 1200px;
-	margin: 60px auto;
-	justify-content: space-between;
-	.archive-adventures-flex-item{
-		width:48%;
-		margin: 10px;
-		position: relative;
-		img{
-			height: 600px;
-		}
-		.adventure-archive-title{
-			position: absolute;
-			top: 0;
-			left:20px;
-			a{
-			font-family: 'Merriweather Web';
-			font-weight: 400;
-			text-decoration: none;
-			font-size: 48px;
-			color: $white;
-			text-shadow: 1px 1px 2px #323232;
-			&:hover{
-				color: $background;
-			}
-			}
-		}
-		.adventure-page-read-more{
-			position: absolute;
-			bottom: 60px;
-			left: 20px;
-			a{
-			border: solid 1px $white;
-			color: $white;	
-			}		
-		}
-	}
+.article-adventure-archive {
+  display: flex;
+  flex-flow: row wrap;
+  width: 1200px;
+  margin: 60px auto;
+  justify-content: space-between;
+  .archive-adventures-flex-item {
+    width: 48%;
+    margin: 10px;
+    position: relative;
+    img {
+      height: 600px;
+    }
+    .adventure-archive-title {
+      position: absolute;
+      top: 0;
+      left: 20px;
+      a {
+        font-family: 'Merriweather Web';
+        font-weight: 400;
+        text-decoration: none;
+        font-size: 48px;
+        color: $white;
+        text-shadow: 1px 1px 2px #323232;
+        &:hover {
+          color: $background;
+        }
+      }
+    }
+    .adventure-page-read-more {
+      position: absolute;
+      bottom: 60px;
+      left: 20px;
+      a {
+        border: solid 1px $white;
+        color: $white;
+      }
+    }
+  }
 }
-
-
 
 //Search page
 .search-main {
-	width: 60%;
-	margin: 0 auto;
+  width: 60%;
+  margin: 0 auto;
 
-	.search-header {
-		font-size: 1.5em;
-		text-align: center;
-	}
+  .search-header {
+    font-size: 1.5em;
+    text-align: center;
+  }
 
-	.entry-title {
-		a {
-			text-decoration: none;
-			color: $darkGreen;
-			font-size: 1.5em;
+  .entry-title {
+    a {
+      text-decoration: none;
+      color: $darkGreen;
+      font-size: 1.5em;
 
-			&:hover {
-				color: $orangeHover;
-			}
-		}
-	}
+      &:hover {
+        color: $orangeHover;
+      }
+    }
+  }
 
-	.search-article .search-text {
-		p {
-			text-align: justify;
-			font-size: 1.2em;
-		}
-	}
-
+  .search-article .search-text {
+    p {
+      text-align: justify;
+      font-size: 1.2em;
+    }
+  }
 }
 
 .search-not-fund-text {
-	p {
-		text-align: justify;
-		font-size: 1.5em;
-	}
+  p {
+    text-align: justify;
+    font-size: 1.5em;
+  }
 }
-
-
 
 ///////////////
 .sticky {
-	display: block;
+  display: block;
 }
 
 .hentry {
-	margin: 0 0 $base__space-unit;
+  margin: 0 0 $base__space-unit;
 }
 
 .updated:not(.published) {
-	display: none;
+  display: none;
 }
 
 .single .byline,
 .group-blog .byline {
-	display: inline;
+  display: inline;
 }
 
 .page-content,
 .entry-summary {
-	margin: $base__space-unit 0 0;
+  margin: $base__space-unit 0 0;
 }
 
 .page-links {
-	clear: both;
-	margin: 0 0 $base__space-unit;
+  clear: both;
+  margin: 0 0 $base__space-unit;
 }
 
 /* Asides */
 
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
-	display: none;
+  display: none;
 }
 
 /* Comments */
 
 .comment-content a {
-	word-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .bypostauthor {
-	display: block;
+  display: block;
 }

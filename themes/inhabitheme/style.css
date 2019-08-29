@@ -737,6 +737,21 @@ a {
     border: none; }
   .nav-header-flexbox .menu-menu-1-container {
     width: 100%; }
+  .nav-header-flexbox .icon-search i {
+    color: white; }
+  .nav-header-flexbox .header-search-bar input {
+    color: white; }
+    .nav-header-flexbox .header-search-bar input:focus {
+      color: white; }
+  .nav-header-flexbox ::-webkit-input-placeholder {
+    color: white;
+    text-transform: uppercase; }
+  .nav-header-flexbox ::-ms-input-placeholder {
+    color: white;
+    text-transform: uppercase; }
+  .nav-header-flexbox ::placeholder {
+    color: white;
+    text-transform: uppercase; }
   .nav-header-flexbox ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -806,6 +821,41 @@ a {
   color: #248A83; }
   .no-large-image .header-search-bar input:focus {
     color: #248A83; }
+
+.nav-header-flexbox.scroll-nav-header {
+  position: fixed;
+  width: 90%; }
+  .nav-header-flexbox.scroll-nav-header .header-logo-img {
+    background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+    background-size: contain;
+    margin-top: 10px;
+    border: none; }
+  .nav-header-flexbox.scroll-nav-header ul {
+    padding: 0; }
+    .nav-header-flexbox.scroll-nav-header ul li {
+      text-shadow: none; }
+      .nav-header-flexbox.scroll-nav-header ul li a {
+        color: #248A83;
+        text-decoration: none;
+        text-shadow: none;
+        font-weight: 700; }
+        .nav-header-flexbox.scroll-nav-header ul li a:hover {
+          color: black; }
+  .nav-header-flexbox.scroll-nav-header ::-webkit-input-placeholder {
+    color: #248A83;
+    text-transform: uppercase; }
+  .nav-header-flexbox.scroll-nav-header ::-ms-input-placeholder {
+    color: #248A83;
+    text-transform: uppercase; }
+  .nav-header-flexbox.scroll-nav-header ::placeholder {
+    color: #248A83;
+    text-transform: uppercase; }
+  .nav-header-flexbox.scroll-nav-header .icon-search i {
+    color: #248A83; }
+  .nav-header-flexbox.scroll-nav-header .header-search-bar input {
+    color: #248A83; }
+    .nav-header-flexbox.scroll-nav-header .header-search-bar input:focus {
+      color: #248A83; }
 
 .main-img-logo {
   margin: 0;
