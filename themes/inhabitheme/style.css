@@ -904,7 +904,10 @@ a {
   padding: 30px 10px;
   border: 1px solid #e1e1e1;
   border-top-width: 5px;
-  margin: 0 20px; }
+  margin: 0 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
   .front-page-product-item:hover {
     border-color: #d99054; }
   .front-page-product-item img {
