@@ -74,10 +74,11 @@ add_filter( 'body_class', 'addBodyClass' );
 
 function addBodyClass( $classes ) {
 
-  if( is_front_page() || is_page( 'About' ) || is_singular( 'adventure_type' ) ) {
+  if(is_front_page()) {
     $classes[] = 'large-image';
-  }elseif(is_front_page()){
     $classes[] = 'front-page-scroll';
+  }elseif( is_front_page() || is_page( 'About' ) || is_singular( 'adventure_type' ) ){
+    $classes[] = 'large-image';
   }else{
     $classes[] = 'no-large-image'; 
   }

@@ -127,7 +127,7 @@
   .menu-menu-1-container {
     width: 100%;
   }
-  .icon-search i{
+  .icon-search i {
     color: $white;
   }
   .header-search-bar {
@@ -207,8 +207,8 @@
     color: $darkGreen;
     text-transform: uppercase;
   }
-
-  .icon-search {
+  
+  .icon-search i {
     color: $darkGreen;
   }
 
@@ -223,9 +223,10 @@
   }
 }
 
-.nav-header-flexbox.scroll-nav-header {
+.front-page-scroll {
+  .nav-header-flexbox.scroll-nav-header {
     position: fixed;
-	width: 90%;
+    width: 90%;
     .header-logo-img {
       background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
       background-size: contain;
@@ -239,8 +240,8 @@
         a {
           color: $darkGreen;
           text-decoration: none;
-		  text-shadow: none;
-		  font-weight: 700;
+          text-shadow: none;
+          font-weight: 700;
 
           &:hover {
             color: $black;
@@ -249,22 +250,22 @@
       }
     }
 
-
-  ::placeholder {
-    color: $darkGreen;
-    text-transform: uppercase;
-  }
-
-  .icon-search i{
-    color: $darkGreen;
-  }
-
-  .header-search-bar {
-    input {
+    ::placeholder {
       color: $darkGreen;
+      text-transform: uppercase;
+    }
 
-      &:focus {
+    .icon-search i {
+      color: $darkGreen;
+    }
+
+    .header-search-bar {
+      input {
         color: $darkGreen;
+
+        &:focus {
+          color: $darkGreen;
+        }
       }
     }
   }

@@ -814,7 +814,7 @@ a {
   color: #248A83;
   text-transform: uppercase; }
 
-.no-large-image .icon-search {
+.no-large-image .icon-search i {
   color: #248A83; }
 
 .no-large-image .header-search-bar input {
@@ -822,39 +822,39 @@ a {
   .no-large-image .header-search-bar input:focus {
     color: #248A83; }
 
-.nav-header-flexbox.scroll-nav-header {
+.front-page-scroll .nav-header-flexbox.scroll-nav-header {
   position: fixed;
   width: 90%; }
-  .nav-header-flexbox.scroll-nav-header .header-logo-img {
+  .front-page-scroll .nav-header-flexbox.scroll-nav-header .header-logo-img {
     background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
     background-size: contain;
     margin-top: 10px;
     border: none; }
-  .nav-header-flexbox.scroll-nav-header ul {
+  .front-page-scroll .nav-header-flexbox.scroll-nav-header ul {
     padding: 0; }
-    .nav-header-flexbox.scroll-nav-header ul li {
+    .front-page-scroll .nav-header-flexbox.scroll-nav-header ul li {
       text-shadow: none; }
-      .nav-header-flexbox.scroll-nav-header ul li a {
+      .front-page-scroll .nav-header-flexbox.scroll-nav-header ul li a {
         color: #248A83;
         text-decoration: none;
         text-shadow: none;
         font-weight: 700; }
-        .nav-header-flexbox.scroll-nav-header ul li a:hover {
+        .front-page-scroll .nav-header-flexbox.scroll-nav-header ul li a:hover {
           color: black; }
-  .nav-header-flexbox.scroll-nav-header ::-webkit-input-placeholder {
+  .front-page-scroll .nav-header-flexbox.scroll-nav-header ::-webkit-input-placeholder {
     color: #248A83;
     text-transform: uppercase; }
-  .nav-header-flexbox.scroll-nav-header ::-ms-input-placeholder {
+  .front-page-scroll .nav-header-flexbox.scroll-nav-header ::-ms-input-placeholder {
     color: #248A83;
     text-transform: uppercase; }
-  .nav-header-flexbox.scroll-nav-header ::placeholder {
+  .front-page-scroll .nav-header-flexbox.scroll-nav-header ::placeholder {
     color: #248A83;
     text-transform: uppercase; }
-  .nav-header-flexbox.scroll-nav-header .icon-search i {
+  .front-page-scroll .nav-header-flexbox.scroll-nav-header .icon-search i {
     color: #248A83; }
-  .nav-header-flexbox.scroll-nav-header .header-search-bar input {
+  .front-page-scroll .nav-header-flexbox.scroll-nav-header .header-search-bar input {
     color: #248A83; }
-    .nav-header-flexbox.scroll-nav-header .header-search-bar input:focus {
+    .front-page-scroll .nav-header-flexbox.scroll-nav-header .header-search-bar input:focus {
       color: #248A83; }
 
 .main-img-logo {
