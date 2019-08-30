@@ -823,8 +823,10 @@ a {
     color: #248A83; }
 
 .front-page-scroll .nav-header-flexbox.scroll-nav-header {
+  width: 100%;
+  padding: 0 80px;
   position: fixed;
-  width: 90%; }
+  background: lightgray; }
   .front-page-scroll .nav-header-flexbox.scroll-nav-header .header-logo-img {
     background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
     background-size: contain;
