@@ -18,3 +18,9 @@ Flexbox and Grid were used in this project, along with a lot of other stuff.
 
 
 
+![ScreenShot](themes/inhabitheme/screenshot/screenshot01.png)
+![ScreenShot](themes/inhabitheme/screenshot/screenshot02.png)
+![ScreenShot](themes/inhabitheme/screenshot/screenshot03.png)
+![ScreenShot](themes/inhabitheme/screenshot/screenshot04.png)
+![ScreenShot](themes/inhabitheme/screenshot/screenshot05.png)
+![ScreenShot](themes/inhabitheme/screenshot/screenshot06.png)
